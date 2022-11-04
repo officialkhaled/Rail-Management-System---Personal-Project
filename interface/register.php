@@ -1,6 +1,21 @@
+<?php 
+
+    if(isset($_POST['err'])){
+        if($_GET['err'] == 'invalid_request'){
+            echo "invalid request error..";
+        }
+
+        if($_POST['err'] == 'null'){
+            echo "null username/password";
+        }
+    }
+?>
+
+
 <html>
   <head>
     <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <table
@@ -18,18 +33,18 @@
             style="margin: 10px 20px"
           />
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.html">Home</a> |
-            <a href="login.html">Login</a> |
-            <a href="register.html">Registration</a> |
+            <a href="publicHome.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="register.php">Registration</a> |
             <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a> |
+            <a href="contactUs.html">Contact Us</a>
           </nav>
         </td>
       </tr>
 
       <tr>
         <td style="padding: 80px">
-          <form method="" action="" enctype="">
+          <form method="post" action="regCheck.php" enctype="">
             <fieldset>
               <legend>REGISTRATION</legend>
               <table>
@@ -57,7 +72,7 @@
                 <tr>
                   <td>Confirm Password</td>
                   <td>:</td>
-                  <td><input type="password" name="password" /></td>
+                  <td><input type="password" name="conPass" /></td>
                 </tr>
               </table>
               <hr />

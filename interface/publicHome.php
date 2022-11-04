@@ -1,7 +1,17 @@
+<!-- PHP -->
+<?php
+
+
+
+?>
+
+<!-- HTML -->
 <html>
   <head>
-    <title>Home</title>
+    <title>Public Home</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <table
       border="1"
@@ -18,11 +28,11 @@
             style="margin: 10px 20px"
           />
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.html">Home</a> |
-            <a href="login.html">Login</a> |
-            <a href="register.html">Registration</a> |
+            <a href="publicHome.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="register.php">Registration</a> |
             <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a> |
+            <a href="contactUs.html">Contact Us</a>
           </nav>
         </td>
       </tr>

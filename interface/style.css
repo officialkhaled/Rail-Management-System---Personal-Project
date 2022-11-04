@@ -1,0 +1,23 @@
+body {
+  background-color: snow;
+}
+
+/* unvisited link */
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(51, 13, 155);
+}
+
+/* mouse over link */
+a:hover {
+  color: #ce3a00;
+}
+
+/* selected link */
+a:active {
+}
