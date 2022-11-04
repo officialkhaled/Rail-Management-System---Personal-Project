@@ -1,4 +1,4 @@
-<!-- Employee -->
+<!-- Customer // not used currently-->
 
 <html>
   <head>
@@ -22,10 +22,9 @@
           />
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="cusHome.php">Dashboard</a> |
-            <a href="album.html">Album</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a> |
-            <a href="logout.php">Logout</a>
+            <a href="album.php">Album</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>
       </tr>
@@ -33,13 +32,13 @@
       <tr>
         <td align="center">
           <nav style="margin: 15px 20px">
-            <a href="dashboard.html">Dashboard</a> |
-            <a href="album.html">View Album</a> |
-            <a href="editAlbum.html">Edit Album</a>
+            <a href="dashboard.php">Dashboard</a> |
+            <a href="viewAlbum.php">View Album</a> |
+            <a href="editAlbum.php">Edit Album</a>
           </nav>
         </td>
       </tr>
-      <!-- Change -->
+
       <tr>
         <td style="padding: 80px">
           <fieldset>
@@ -95,7 +94,7 @@
           </fieldset>
         </td>
       </tr>
-      <!-- Change -->
+
       <tr align="center">
         <td colspan="2">
           <nav>

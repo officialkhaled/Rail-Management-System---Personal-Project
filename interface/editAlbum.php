@@ -1,8 +1,8 @@
-<!-- Customer -->
+<!-- Employee UI -->
 
 <html>
   <head>
-    <title>Album</title>
+    <title>Employee Album</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,29 +22,30 @@
           />
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="cusHome.php">Dashboard</a> |
-            <a href="album.html">Album</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a>
+            <a href="album.php">Album</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="contactUs.php">Contact Us</a> |
+            <a href="logout.php">Logout</a>
           </nav>
         </td>
       </tr>
-
-      <tr>
-        <td align="center">
-          <nav style="margin: 15px 20px">
-            <a href="dashboard.html">Dashboard</a> |
-            <a href="viewAlbum.html">View Album</a> |
-            <a href="editAlbum.html">Edit Album</a>
-          </nav>
-        </td>
-      </tr>
-
+      <!-- Change -->
       <tr>
         <td style="padding: 80px">
           <fieldset>
             <legend>PICTURES</legend>
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">
+                <tr>
+                  <td align="center" colspan="2">
+                    <nav style="margin: 15px 20px">
+                      <button type="button" name="viewImage">Add images</button>
+                      <button type="button" name="deleteImage">
+                        Delete images
+                      </button>
+                    </nav>
+                  </td>
+                </tr>
                 <tr>
                   <td>
                     <img
@@ -94,7 +95,7 @@
           </fieldset>
         </td>
       </tr>
-
+      <!-- Change -->
       <tr align="center">
         <td colspan="2">
           <nav>

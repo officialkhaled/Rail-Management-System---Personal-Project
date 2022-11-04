@@ -1,0 +1,4 @@
+** Username | Password | Name | Email | Gender | Date of Birth (YYYY-MM-DD)**
+
+khaled | abc | Khaled Hossain | khaled@aiub.edu | Male | 2020-07-02
+sadia | def | Sadia Hossain | sadia@aiub.edu | Female | 2022-10-06

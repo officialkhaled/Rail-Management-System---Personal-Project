@@ -1,14 +1,14 @@
 <!-- PHP -->
 <?php
 
-if (isset($_POST['err'])) {
-    if ($_POST['err'] == 'invalid_request') {
-        echo "<h2> Invalid request error! </h2>";
-    }
+    if (isset($_POST['err'])) {
+        if ($_POST['err'] == 'invalid_request') {
+            echo "<h2> Invalid request error! </h2>";
+        }
 
-    if ($_POST['err'] == 'null') {
-        echo "<h2> Username/Password is missing! </h2>";
-    }
+        if ($_POST['err'] == 'null') {
+            echo "<h2> Username/Password is missing! </h2>";
+        }
 }
 
 ?>
@@ -30,16 +30,15 @@ if (isset($_POST['err'])) {
                     <a href="publicHome.php" class="" >Home</a> |
                     <a href="login.php">Login</a> |
                     <a href="register.php">Registration</a> |
-                    <a href="deals&offers.html">Deals/Offers</a> |
-                    <a href="contactUs.html">Contact Us</a>
+                    <a href="deals&offers.php">Deals/Offers</a> |
+                    <a href="contactUs.php">Contact Us</a>
                 </nav>
             </td>
         </tr>
 
         <tr>
             <td style="padding: 80px">
-                <form method="post" action="loginCheck.php" enctype="">
-
+                <form action="loginCheck.php" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend>LOGIN</legend>
                         <table>
@@ -61,7 +60,7 @@ if (isset($_POST['err'])) {
                                 <td>
                                 <td><input type="submit" name="btn" value="Submit"></td>
             </td>
-            <td><a href="forgotPass.html">Forgot Password?</a></td>
+            <td><a href="forgotPass.php">Forgot Password?</a></td>
         </tr>
     </table>
     </fieldset>
@@ -79,9 +78,7 @@ if (isset($_POST['err'])) {
             <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
     </tr>
-
     </table>
-
 </body>
 
 </html>

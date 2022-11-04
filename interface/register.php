@@ -1,17 +1,19 @@
+<!-- PHP -->
 <?php 
 
     if(isset($_POST['err'])){
         if($_GET['err'] == 'invalid_request'){
-            echo "invalid request error..";
+            echo "<h2> Invalid request error! </h2>";
         }
 
         if($_POST['err'] == 'null'){
-            echo "null username/password";
+            echo "<h2> Missing Fields! </h2>";
         }
     }
+    
 ?>
 
-
+<!-- HTML -->
 <html>
   <head>
     <title>Registration</title>
@@ -36,15 +38,15 @@
             <a href="publicHome.php">Home</a> |
             <a href="login.php">Login</a> |
             <a href="register.php">Registration</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a>
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>
       </tr>
 
       <tr>
         <td style="padding: 80px">
-          <form method="post" action="regCheck.php" enctype="">
+          <form action="regCheck.php"  method="post" enctype="multipart/form-data">
             <fieldset>
               <legend>REGISTRATION</legend>
               <table>
@@ -80,21 +82,21 @@
                 <tr>
                   <fieldset>
                     <legend>Gender</legend>
-                    <input type="radio" name="gender" value="" /> Male <input
-                    type="radio" name="gender" value= /> Female
-                    <input type="radio" name="gender" value="" /> Other
+                    <input type="radio" name="gender" value="Male" /> Male <input
+                    type="radio" name="gender" value="Female" /> Female
+                    <input type="radio" name="gender" value="Other" /> Other
                   </fieldset>
                 </tr>
                 <tr>
                   <fieldset>
                     <legend>Date of Birth</legend>
-                    <input type="date" name="dob" />
+                    <input type="date" name="dob" value="" />
                   </fieldset>
                 </tr>
               </table>
               <hr />
               <input type="submit" name="btn" id="Submit" />
-              <input type="reset" id="Reset" />
+              <input type="reset" name="rst" id="Reset" />
             </fieldset>
           </form>
         </td>
@@ -107,7 +109,7 @@
             <a href="privacyPolicy.html">Privacy Policy</a> |
             <a href="aboutUs.html">About Us</a>
           </nav>
-          <footer style="margin: 10px">Copyright &copy; 2017</footer>
+          <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
     </table>

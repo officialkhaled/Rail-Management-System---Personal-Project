@@ -1,9 +1,12 @@
+<!-- Customer UI -->
+
 <html>
   <head>
     <title>Album</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <form action="" method="post" enctype="multipart/form-data">
     <table
       border="1"
       align="center"
@@ -20,9 +23,9 @@
           />
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="cusHome.php">Dashboard</a> |
-            <a href="album.html">Album</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a> |
+            <a href="album.php">Album</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="contactUs.php">Contact Us</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
@@ -107,5 +110,6 @@
         </td>
       </tr>
     </table>
+    </form>
   </body>
 </html>

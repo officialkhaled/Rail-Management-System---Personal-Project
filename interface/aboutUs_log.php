@@ -19,10 +19,10 @@
             style="margin: 10px 20px"
           />
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.php">Home</a> | <a href="login.php">Login</a> |
+            <a href="cusHome.php">Home</a> | <a href="login.php">Login</a> |
             <a href="register.php">Registration</a> |
             <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="contactUs.php">Contact Us</a>
+            <a href="contactUs_log.php">Contact Us</a>
           </nav>
         </td>
       </tr>
