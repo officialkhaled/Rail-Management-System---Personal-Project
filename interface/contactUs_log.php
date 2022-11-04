@@ -3,7 +3,7 @@
 <!-- HTML -->
 <html>
   <head>
-    <title>Contact us</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -77,9 +77,9 @@
       <tr align="center" style="margin: 10px 0;">
         <td colspan="2">
           <nav>
-            <a href="t&c_log.html">Terms & Conditions</a> |
-            <a href="privacyPolicy_log.html">Privacy Policy</a> |
-            <a href="aboutUs_log.html">About Us</a>
+            <a href="t&c_log.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_log.php">Privacy Policy</a> |
+            <a href="aboutUs_log.php">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
@@ -101,4 +101,5 @@
             echo "<h2> Empty Fields! </h2>";
         }
     }
+
 ?>

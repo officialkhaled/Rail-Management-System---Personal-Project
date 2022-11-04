@@ -1,5 +1,4 @@
 <!-- Employee UI -->
-
 <html>
   <head>
     <title>Employee_Album</title>
@@ -29,11 +28,17 @@
           </nav>
         </td>
       </tr>
+
       <!-- Change -->
       <tr>
+
         <td style="padding: 80px">
           <fieldset>
-            <legend>PICTURES</legend>
+
+            <legend>Deals and Offers</legend>
+
+            <h5>Already know what kind of train deal you're looking for but not sure what's on offer? Pick a type of deal below to see some of great savings you can make when booking UK train travel with us.</h5>
+
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">
                 <tr>
@@ -48,47 +53,44 @@
                 </tr>
                 <tr>
                   <td>
+
                     <img
-                      src="img/album/seats_1.jpg"
+                      src="img/train1.jpg"
                       alt="img_1"
                       width="250px"
                     />
+                    <p> 10% Discount on Turna Nishita Antonagar Train.</p>
+                    <p> Valid till 20 November 2022.</p>
+
+
                   </td>
                   <td>
                     <img
-                      src="img/album/train_1.jpg"
+                      src="img/train2.jpg"
                       alt="img_2"
                       width="250px"
                     />
+                    <p>15% off Standard Class day Return tickets for 2 adults travelling together on weekends.</p>
+                     <p> Valid till 25 November 2022.</p>
+
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/album/seat_2.png" alt="img_3" width="250px" />
+                    <img src="img/train4.jpg" alt="img_3" width="250px" />
+                     <p>Buy 5 full tickets and get 1 free</p>
+                     <p> Valid till 27 November 2022.</p>
                   </td>
                   <td>
                     <img
-                      src="img/album/train_2.jpg"
+                      src="img/train3.jpg"
                       alt="img_4"
                       width="250px"
                     />
+                     <p>25% discount for students with their Student ID</p>
+                     <p> Valid till 30 November 2022.</p>
                   </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="img/album/seats_3.jpg"
-                      alt="img_5"
-                      width="250px"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="img/album/train_3.jpg"
-                      alt="img_6"
-                      width="250px"
-                    />
-                  </td>
+                
                 </tr>
               </table>
             </form>

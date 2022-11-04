@@ -102,11 +102,11 @@
       <tr align="center">
         <td colspan="2">
           <nav>
-            <a href="t&c.html">Terms & Conditions</a> |
-            <a href="privacyPolicy.html">Privacy Policy</a> |
-            <a href="aboutUs.html">About Us</a>
+            <a href="t&c_log.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_log.php">Privacy Policy</a> |
+            <a href="aboutUs_log.php">About Us</a>
           </nav>
-          <footer style="margin: 10px">Copyright &copy; 2017</footer>
+          <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
     </table>

@@ -1,7 +1,7 @@
 <!-- PHP -->
 <?php
 
-
+  
 
 ?>
 
@@ -31,8 +31,8 @@
             <a href="publicHome.php">Home</a> |
             <a href="login.php">Login</a> |
             <a href="register.php">Registration</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a>
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>
       </tr>
@@ -50,7 +50,7 @@
             <a href="privacyPolicy.html">Privacy Policy</a> |
             <a href="aboutUs.html">About Us</a>
           </nav>
-          <footer style="margin: 10px">Copyright &copy; 2017</footer>
+          <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
     </table>
