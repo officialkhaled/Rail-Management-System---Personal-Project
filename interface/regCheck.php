@@ -1,4 +1,5 @@
 <?php 
+
     session_start();
 
     $name = $_POST['name'];
@@ -8,7 +9,6 @@
     $conPass = $_POST['password'];
     $gender = $_POST['gender'];
     $dob = $_POST['dob'];
-
 
     if($name == "" || $email == "" || $username == "" || $password == "" || $conPass == "" || $gender == "" || $dob == "") {
         header('location: register.php?err=null');

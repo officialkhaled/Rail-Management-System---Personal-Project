@@ -8,10 +8,10 @@
   </head>
   <body>
     <table
-      border="1"
+      border="2"
       align="center"
-      width="650px"
-      style="border-collapse: collapse; margin-top: 20px"
+      width="860px"
+      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
       <tr>
         <td colspan="2">
@@ -48,9 +48,9 @@
       <tr align="center" style="margin: 10px 0;">
         <td colspan="2">
           <nav>
-            <a href="t&c.html">Terms & Conditions</a> |
-            <a href="privacyPolicy.html">Privacy Policy</a> |
-            <a href="aboutUs.html">About Us</a>
+            <a href="t&c_log.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_log.php">Privacy Policy</a> |
+            <a href="aboutUs_log.php">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

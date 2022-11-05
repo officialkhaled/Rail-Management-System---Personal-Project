@@ -1,27 +1,30 @@
+<!-- Customer UI -->
+
 <!-- PHP -->
 <?php
 
-  
+
 
 ?>
 
 <!-- HTML -->
 <html>
   <head>
-    <title>Public Home</title>
+    <title>Customer Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <form action="loginCheck.php" method="post" enctype="multipart/form-data">
     <table
-    border="2"
+      border="2"
       align="center"
       width="860px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
+      style="border-collapse: collapse; margin-top: 24px"
     >
-    <!-- Top Bars (start) -->
     <tr>
       <td>
+      
           <nav style="margin: 10px 10px; display: block; float: left">
             <!--<a href="contactUs_log.php">Contact Us</a>-->
             <h1>Train Station System</h1>
@@ -39,19 +42,17 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.php">Home</a> |
-            <a href="login.php">Login</a> |
-            <a href="register.php">Registration</a> |
-            <a href="deals&offers_pub.php">Deals/Offers</a> |
+            <a href="cusHome.php">Home</a> |
+            <a href="dashboard_cus.php">Dashboard</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
             <a href="counters.php">Counters</a> |
-            <a href="contactUs.php">Contact Us</a>
+            <a href="feedback.php">Feedback</a> |
+            <a href="logout.php">Logout</a>
           </nav>
         </td>
       </tr>
-    <!-- Top Bars (end) -->
 
-
-    <tr>
+      <tr>
         <td style="padding-bottom: 100px">
           <h2 style="margin: 30px 65px">Welcome Home</h2>
 
@@ -88,37 +89,9 @@
         <br>  
         <h2 style="margin: 30px">Train Station Management System</h2>
 
-        <nav style="margin: 30px">
-        <table style="margin: 30px">
-        <tr>
-            <td><h4>Search</h4></td>
-            <td><h4>Select</h4></td>
-            <td><h4>Checkout</h4></td>
-          </tr>
-          <tr>
-            <td>
-            <img src="img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
-            </td>
-            <td>
-            <img src="img/icons/select.png" alt="select_icon" width="190px" height="190px" style="margin-right: 50px;">
-            </td>
-            <td>
-            <img src="img/icons/receipt.png" alt="receipt_icon" width="190px" height="190px" style="margin-right: 50px;">
-            </td>
-          </tr>
-          
-          <tr>
-            <td>
-              <p style="margin-top: 15px">Choose your origin, destination, journey dates and search for trains</p>
-            </td>
-            <td>
-              <p>Select your desired trip and choose the class</p>
-            </td>
-            <td>
-              <p>Receive your E-receipt and save it</p>
-            </td>
-          </tr>
-        </table>
+        <p  style="margin: 30px">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br> 
+        </p>
 
         </td>
       </tr>
@@ -126,13 +99,14 @@
       <tr align="center">
         <td>
           <nav>
-            <a href="t&c.html">Terms & Conditions</a> |
-            <a href="privacyPolicy.html">Privacy Policy</a> |
-            <a href="aboutUs.html">About Us</a>
+            <a href="t&c_log.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_log.php">Privacy Policy</a> |
+            <a href="aboutUs_log.php">About us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
     </table>
+    </form>
   </body>
 </html>

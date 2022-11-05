@@ -11,6 +11,7 @@
       width="860px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
+    <!-- Top Bars (start) -->
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
@@ -30,17 +31,17 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
-            <a href="logout.php">Logout</a>
+            <a href="publicHome.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="register.php">Registration</a> |
+            <a href="deals&offers_pub.php">Deals/Offers</a> |
+            <a href="counter.php">Counters</a> |
+            <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>
       </tr>
+    <!-- Top Bars (end) -->
 
-      <!-- Change -->
       <tr>
 
         <td style="padding: 80px">
@@ -100,9 +101,9 @@
       <tr align="center">
         <td colspan="2">
           <nav>
-            <a href="t&c_log.php">Terms & Conditions</a> |
-            <a href="privacyPolicy_log.php">Privacy Policy</a> |
-            <a href="aboutUs_log.php">About Us</a>
+            <a href="t&c.html">Terms & Conditions</a> |
+            <a href="privacyPolicy.html">Privacy Policy</a> |
+            <a href="aboutUs.html">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

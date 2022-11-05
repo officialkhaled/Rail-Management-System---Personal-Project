@@ -1,9 +1,9 @@
-<!-- Customer UI -->
+<!-- Public UI -->
 
 <!-- HTML -->
 <html>
   <head>
-    <title>Contact Us</title>
+    <title>Contact us</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -37,7 +37,7 @@
             <a href="login.php">Login</a> |
             <a href="register.php">Registration</a> |
             <a href="deals&offers_pub.php">Deals/Offers</a> |
-            <a href="counter.php">Counters</a> |
+            <a href="counters.php">Counters</a> |
             <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>
@@ -46,44 +46,15 @@
 
       <tr>
         <td style="padding: 80px">
-          <fieldset>
-            <legend>CONTACT US</legend>
             <form action="contactUsStore.php" method="post" enctype="multipart/form-data">
               <table align="center">
                 <tr>
-                  <td colspan="2">
-                    <h3 align="center">Thank you for reaching us!</h3>
-                  </td>
-                </tr>
-                <tr>
                   <td>
-                    <label for="name">Name</label><br><input type="text" name="name" required>
-                  </td>
-                  <td>
-                  <label for="city">City</label><br><input type="text" name="city" required>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  <label for="phoneNo">Phone no</label><br><input type="number" name="phoneNo" required>
-                  </td>
-                  <td>
-                  <label for="email">Email</label><br><input type="email" name="email">
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    Message <br> <textarea name="message" rows="5" cols="50"></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="submit" name="btn" value="Submit">
+                    <h2>Your message has been sent! Thank you</h2>
                   </td>
                 </tr>
               </table>
             </form>
-          </fieldset>
         </td>
       </tr>
 
@@ -100,19 +71,3 @@
     </table>
   </body>
 </html>
-
-
-<!-- PHP -->
-<?php 
-
-    if(isset($_POST['err'])){
-        if($_GET['err'] == 'invalid_request'){
-            echo "<h2> Invalid request error </h2>";
-        }
-
-        if($_POST['err'] == 'null'){
-            echo "<h2> Empty Fields! </h2>";
-        }
-    }
-
-?>

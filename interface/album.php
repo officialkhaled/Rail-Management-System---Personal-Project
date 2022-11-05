@@ -8,10 +8,10 @@
   <body>
     <form action="" method="post" enctype="multipart/form-data">
     <table
-      border="1"
+    border="2"
       align="center"
-      width="650px"
-      style="border-collapse: collapse; margin-top: 20px"
+      width="860px"
+      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
       <tr>
         <td colspan="2">
@@ -22,10 +22,11 @@
             style="margin: 10px 20px"
           />
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Dashboard</a> |
+            <a href="cusHome.php">Home</a> |
+            <a href="dashboard_cus.php">Dashboard</a> |
             <a href="album.php">Album</a> |
             <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="contactUs.php">Contact Us</a> |
+            <a href="contactUs_log.php">Contact Us</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>

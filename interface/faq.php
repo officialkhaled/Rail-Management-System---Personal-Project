@@ -10,10 +10,10 @@
   <body>
     <form action="loginCheck.php" method="post" enctype="multipart/form-data">
       <table
-        border="1"
-        align="center"
-        width="650px"
-        style="border-collapse: collapse; margin-top: 20px"
+      border="2"
+      align="center"
+      width="860px"
+      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
       >
         <tr>
           <td>

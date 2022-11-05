@@ -4,25 +4,25 @@
   </head>
   <body>
     <table
-      border="1"
+    border="2"
       align="center"
-      width="650px"
-      style="border-collapse: collapse; margin-top: 20px"
+      width="860px"
+      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
       <tr>
         <td colspan="2">
           <img
             src="img/train-station.png"
             alt="Company Logo"
-            width="70px"
+            width="70px" height="70px"
             style="margin: 10px 20px"
           />
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.html">Home</a> |
-            <a href="login.html">Login</a> |
-            <a href="register.html">Registration</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a> |
+            <a href="publicHome.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="register.php">Registration</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="contactUs.php">Contact Us</a> |
           </nav>
         </td>
       </tr>
@@ -34,9 +34,9 @@
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="viewAlbum.html">View Album</a></li>
-            <li><a href="editAlbum.html">Edit Album</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="viewAlbum.php">View Album</a></li>
+            <li><a href="editAlbum.php">Edit Album</a></li>
           </ul>
         </td>
         <td>
@@ -73,7 +73,7 @@
             <a href="privacyPolicy.html">Privacy Policy</a> |
             <a href="aboutUs.html">About Us</a>
           </nav>
-          <footer style="margin: 10px">Copyright &copy; 2017</footer>
+          <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
     </table>

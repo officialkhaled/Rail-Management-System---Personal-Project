@@ -8,10 +8,10 @@
   </head>
   <body>
     <table
-      border="1"
+    border="2"
       align="center"
-      width="650px"
-      style="border-collapse: collapse; margin-top: 20px"
+      width="860px"
+      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
       <tr>
         <td colspan="2">
@@ -44,23 +44,23 @@
                 </tr>
                 <tr>
                   <td>
-                    Your Name <input type="text" name="name" required>
+                    <label for="name">Name</label><br><input type="text" name="name" required>
                   </td>
                   <td>
-                    Your City <input type="text" name="city" required>
+                  <label for="city">City</label><br><input type="text" name="city" required>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Phone number <input type="number" name="phoneNo" required>
+                  <label for="phoneNo">Phone no</label><br><input type="number" name="phoneNo" required>
                   </td>
                   <td>
-                    Email <br><input type="email" name="email">
+                  <label for="email">Email</label><br><input type="email" name="email">
                   </td>
                 </tr>
                 <tr>
                   <td colspan="2">
-                    Message <br> <textarea name="message" rows="6" cols="53"></textarea>
+                    Message <br> <textarea name="message" rows="5" cols="50"></textarea>
                   </td>
                 </tr>
                 <tr>
