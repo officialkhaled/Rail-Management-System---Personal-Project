@@ -45,6 +45,7 @@
         </td>
       </tr>
     <!-- Top Bars (end) -->
+    
         <tr>
             <td style="padding: 80px">
                 <form method="post" action="payTheFare.php" enctype="multipart/form-data">
@@ -84,12 +85,6 @@
                         
                         </table>
                         <table style="margin: 30px">
-                        <tr>
-                            <td>Total number of Passengers </td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="noOfPassenger" value=""></td>
-                        </tr>
                         <tr>
                             <td><input type="submit" name="next" value="Next"></td>
                         </tr>

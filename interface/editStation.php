@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>View Station</title>
+    <title>Edit Station</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -30,7 +30,7 @@
       <tr>
         <td colspan="2">
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
+            <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
             <a href="feedback.php">Feedback</a> |
@@ -43,7 +43,7 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          View Station
+          Edit Station
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -55,7 +55,7 @@
         </td>
         <td style="padding: 80px">
           <fieldset>
-            <legend>View Stations</legend>
+            <legend>Edit Stations</legend>
               <table>
               <tr>
                 <nav style="margin: 20px;">
@@ -83,6 +83,20 @@
                     <td>Noakhali</td>
                     <td>Sonaimuri Railway Station</td>
                     <td>+880 19576 485342</td>
+                </nav>
+              </tr>
+              <tr>
+                <nav>
+                  <td>
+                    <input type="submit" name="addStation" value="Add station">
+                  </td>
+                  <td>
+                    <input type="submit" name="deleteStation" value="Delete station">
+                  </td>
+                  </td>
+                  <td>
+                    <input type="submit" name="addNo" value="Contact no">
+                  </td>
                 </nav>
               </tr>
               </table>

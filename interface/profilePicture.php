@@ -53,6 +53,7 @@
             <li><a href="viewAlbum.php">View Album</a></li>
             <li><a href="profilePicture.php">Change Profile Picture</a></li>
             <li><a href="changePass.php">Change Password</a></li>
+            <li><a href="viewTicket.php">View Ticket Cart</a></li>
           </ul>
         </td>
         <td style="padding: 80px">

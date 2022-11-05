@@ -1,3 +1,5 @@
+<!-- Admin -->
+
 <html>
   <head>
     <title>Dashboard</title>
@@ -14,7 +16,6 @@
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -30,10 +31,9 @@
       <tr>
         <td colspan="2">
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters_cus.php">Counters</a> |
+            <a href="adminHome.php">Home</a> |
+            <a href="dashboard_admin.php">Dashboard</a> |
+            <a href="viewStation.php">Station</a> |
             <a href="feedback.php">Feedback</a> |
             <a href="logout.php">Logout</a>
           </nav>
@@ -48,12 +48,10 @@
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="viewProfile.php">View Profile</a></li>
-            <li><a href="editProfile.php">Edit Profile</a></li>
-            <li><a href="viewAlbum.php">View Album</a></li>
-            <li><a href="profilePicture.php">Change Profile Picture</a></li>
-            <li><a href="changePass.php">Change Password</a></li>
-            <li><a href="viewTicket.php">View Ticket Cart</a></li>
+            <li><a href="viewStation.php">View Station</a></li>
+            <li><a href="editStation.php">Edit Station</a></li>
+            <li><a href="reviewFeedback.php">Review Feedback</a></li>
+            <li><a href="viewApplicants.php">View Applicants</a></li>
           </ul>
         </td>
       </tr>
@@ -61,9 +59,9 @@
       <tr align="center">
         <td colspan="2">
           <nav>
-            <a href="t&c_log.php">Terms & Conditions</a> |
-            <a href="privacyPolicy_log.php">Privacy Policy</a> |
-            <a href="aboutUs_log.php">About Us</a>
+            <a href="t&c_admin.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_admin.php">Privacy Policy</a> |
+            <a href="aboutUs_admin.php">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

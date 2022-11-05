@@ -1,3 +1,5 @@
+<!--  -->
+
 <html>
   <head>
     <title>Dashboard</title>
@@ -53,6 +55,7 @@
             <li><a href="viewAlbum.php">View Album</a></li>
             <li><a href="profilePicture.php">Change Profile Picture</a></li>
             <li><a href="changePass.php">Change Password</a></li>
+            <li><a href="viewTicket.php">View Ticket Cart</a></li>
           </ul>
         </td>
         <td style="padding: 80px">
@@ -63,23 +66,23 @@
                 <tr>
                     <td>Name </td>
                     <td> : </td>
-                    <td> <?php  ?></td>
-                    <td rowspan="6"><img src="img/profile-user.png" alt="profile picture" width="70px" height="70px"><a href="profilePicture.php"><br>Change</a></td>
+                    <td> Khaled Hossain</td>
+                    <td rowspan="5"><img src="img/profile-user.png" alt="profile picture" width="70px" height="70px"><a href="profilePicture.php"><br>Change</a></td>
                 </tr>
                 <tr>
                     <td>Email </td>
                     <td> : </td>
-                    <td><?php  ?></td>
+                    <td> khaled@aiub.edu</td>
                 </tr>
                 <tr>
                     <td>Gender </td>
                     <td> : </td>
-                    <td><?php  ?></td>
+                    <td> Male</td>
                 </tr>
                 <tr>
                     <td>Date of Birth </td>
                     <td> : </td>
-                    <td><?php  ?></td>
+                    <td> 2020-07-02</td>
                 </tr>
                 <tr>
                     <td><a href="editProfile.php">Edit Profile</a></td>
