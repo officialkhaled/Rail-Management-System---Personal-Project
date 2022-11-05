@@ -1,4 +1,4 @@
-<!-- Customer UI -->
+<!-- Public UI -->
 
 <html>
   <head>
