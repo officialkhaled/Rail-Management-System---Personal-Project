@@ -1,4 +1,6 @@
-** Username | Password | Name | Email | Gender | Date of Birth (YYYY-MM-DD)**
+** Username | Password | Usertype | Name | Email | Gender | Date of Birth (YYYY-MM-DD)**
 
-khaled | abc | Khaled Hossain | khaled@aiub.edu | Male | 2020-07-02
-sadia | def | Sadia Hossain | sadia@aiub.edu | Female | 2022-10-06
+khaled | abc | customer | Khaled Hossain | khaled@aiub.edu | Male | 2020-07-02
+sadia | def | customer | Sadia Hossain | sadia@aiub.edu | Female | 2022-10-06
+
+abdul | abc | admin | Abdullah Sheikh | abdullah@student.edu | Male | 2019-02-13

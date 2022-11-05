@@ -1,36 +1,65 @@
 <html>
   <head>
-    <title>Edit Profile</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <table
     border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
+          <!-- Top Bars (start) -->
+    <tr>
+      <td colspan="2">
+          <nav style="margin: 10px 10px; display: block; float: left">
+            <!--<a href="contactUs_log.php">Contact Us</a>-->
+            <h1>Train Station System</h1>
+            <h5>A Complete Application for Railway Train System</h5>
+          </nav>
+          <img
+            src="img/train-station.png"
+            alt="Company Logo"
+            width="70px" height="70px"
+            style="margin: 30px 20px; 
+            float:right"
+          />
+      </td>
+    </tr>
       <tr>
-        <td colspan="2"><img src="img/Screenshot_2022_02_16_at_9_30_14_am_copy.jpg" alt="Profile Picture" style="width: 80px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logged in as <a href="profile.html"> User </a> | <a href="logout.html">Logout</a></td>
+        <td colspan="2">
+          <nav style="margin: 30px 20px; display: block; float: right">
+            <a href="cusHome.php">Home</a> |
+            <a href="dashboard_cus.php">Dashboard</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="counters_cus.php">Counters</a> |
+            <a href="feedback.php">Feedback</a> |
+            <a href="logout.php">Logout</a>
+          </nav>
+        </td>
       </tr>
+    <!-- Top Bars (end) -->
 
       <tr>
         <td style="padding-bottom: 100px">
-        <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px;">Account</h4><hr style="margin: 0 10px;">
-        <ul style="margin-left: 20px; margin-top:20px;">
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="viewProfile.html">View Profile</a></li>
-            <li><a href="editProfile.html>Edit Profile</a></li>
-            <li><a href="changepfp.html">Change Profile Picture</a></li>
-            <li><a href="changePass.html">Change Password</a></li>
-            <li><a href="logout.html">Logout</a></li>
-        </ul>
-    </td>
-
-    <td style="padding-bottom: 100px">
-    <fieldset>
-        <legend>EDIT PROFILE</legend>
-        <form action="" method="post">
-            <table align="center">
+          <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
+          Edit Profile
+          </h4>
+          <hr style="margin: 0 10px" />
+          <ul style="margin-left: 20px; margin-top: 20px">
+            <li><a href="viewProfile.php">View Profile</a></li>
+            <li><a href="editProfile.php">Edit Profile</a></li>
+            <li><a href="viewAlbum.php">View Album</a></li>
+            <li><a href="profilePicture.php">Change Profile Picture</a></li>
+            <li><a href="changePass.php">Change Password</a></li>
+          </ul>
+        </td>
+        <td style="padding: 80px">
+          <fieldset>
+          <legend>EDIT PROFILE</legend>
+            <form action="regCheck.php" method="post" enctype="multipart/form-data">
+              <table align="center">
                 <tr>
                     <td>Name</td>
                     <td>:</td>
@@ -45,9 +74,9 @@
                     <td>Gender</td>
                     <td>:</td>
                     <td>
-                        <input type="radio">Male 
-                        <input type="radio">Female 
-                        <input type="radio">Other 
+                        <input type="radio" value="Male">Male 
+                        <input type="radio" value="Female">Female 
+                        <input type="radio" value="Other">Other 
                     </td>
                 </tr>
                 <tr>
@@ -58,18 +87,23 @@
                 <tr>
                     <td><input type="submit" name="btn" value="Submit"></td>
                 </tr>
-            </table>
-        </form>
-    </fieldset></td>
+              </table>
+            </form>
+          </fieldset>
+        </td>
+
       </tr>
 
       <tr align="center">
         <td colspan="2">
+          <nav>
+            <a href="t&c_log.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_log.php">Privacy Policy</a> |
+            <a href="aboutUs_log.php">About Us</a>
+          </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
-
     </table>
-
   </body>
 </html>

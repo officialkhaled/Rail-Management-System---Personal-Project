@@ -1,4 +1,4 @@
-<!-- Public -->
+<!-- Customer UI -->
 
 <html>
   <head>
@@ -7,14 +7,14 @@
   </head>
   <body>
     <table
-      border="2"
+    border="2"
       align="center"
       width="860px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px"
+      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-      <!-- Top Bars (start) -->
-      <tr>
-        <td>
+          <!-- Top Bars (start) -->
+    <tr>
+      <td>
           <nav style="margin: 10px 10px; display: block; float: left">
             <!--<a href="contactUs_log.php">Contact Us</a>-->
             <h1>Train Station System</h1>
@@ -23,24 +23,26 @@
           <img
             src="img/train-station.png"
             alt="Company Logo"
-            width="70px"
-            height="70px"
-            style="margin: 30px 20px; float: right"
+            width="70px" height="70px"
+            style="margin: 30px 20px; 
+            float:right"
           />
-        </td>
-      </tr>
+      </td>
+    </tr>
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.php">Home</a> | <a href="login.php">Login</a> |
-            <a href="register.php">Registration</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters.php">Counters</a> |
-            <a href="contactUs.php">Contact Us</a>
+            <a href="adminHome.php">Home</a> |
+            <a href="dashboard_admin.php">Dashboard</a> |
+            <a href="deals&offers_admin.php">Deals/Offers</a> |
+            <a href="counters_admin.php">Counters</a> |
+            <a href="feedback_admin.php">Feedback</a> |
+            <a href="logout.php">Logout</a>
           </nav>
         </td>
       </tr>
-      <!-- Top Bars (end) -->
+    <!-- Top Bars (end) -->
+
 
       <tr>
         <td style="padding: 80px">
@@ -90,9 +92,9 @@
       <tr align="center">
         <td>
           <nav>
-            <a href="t&c.html">Terms & Conditions</a> |
-            <a href="privacyPolicy.html">Privacy Policy</a> |
-            <a href="aboutUs.html">About Us</a>
+            <a href="t&c_admin.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_admin.php">Privacy Policy</a> |
+            <a href="aboutUs_admin.php">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

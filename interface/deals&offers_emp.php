@@ -37,7 +37,7 @@
 
             <legend>Deals and Offers</legend>
 
-            <h5>Already know what kind of train deal you're looking for but not sure what's on offer? Pick a type of deal below to see some of great savings you can make when booking UK train travel with us.</h5>
+            <h5>Already know what kind of train deal you're looking for but not sure what's on offer? Pick a type of deal below to see some of great savings you can make when booking BD train travel with us.</h5>
 
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">

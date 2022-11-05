@@ -89,6 +89,17 @@
                   <td>:</td>
                   <td><input type="password" name="conPass" /></td>
                 </tr>
+                <!--
+                <tr>
+                  <td>Usertype</td>
+                  <td>:</td>
+                  <td>
+                    <input type="radio" name="usertype" value="admin"/> Admin
+                    <input type="radio" name="usertype" value="employee"/> Employee
+                    <input type="radio" name="usertype" value="customer"/> Customer
+                  </td>
+                </tr>
+                -->
               </table>
               <hr />
               <table>

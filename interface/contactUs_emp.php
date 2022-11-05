@@ -1,4 +1,4 @@
-<!-- Customer UI -->
+<!-- Employee UI -->
 
 <!-- HTML -->
 <html>
@@ -33,11 +33,11 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters_cus.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
+            <a href="empHome.php">Home</a> |
+            <a href="dashboard_emp.php">Dashboard</a> |
+            <a href="deals&offers_emp.php">Deals/Offers</a> |
+            <a href="counters_emp.php">Counters</a> |
+            <a href="feedback_emp.php">Feedback</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
@@ -90,9 +90,9 @@
       <tr align="center" style="margin: 10px 0;">
         <td colspan="2">
           <nav>
-            <a href="t&c_log.php">Terms & Conditions</a> |
-            <a href="privacyPolicy_log.php">Privacy Policy</a> |
-            <a href="aboutUs_log.php">About Us</a>
+            <a href="t&c_emp.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_emp.php">Privacy Policy</a> |
+            <a href="aboutUs_emp.php">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

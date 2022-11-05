@@ -33,7 +33,7 @@
             <a href="cusHome.php">Home</a> |
             <a href="dashboard_cus.php">Dashboard</a> |
             <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters.php">Counters</a> |
+            <a href="counters_cus.php">Counters</a> |
             <a href="feedback.php">Feedback</a> |
             <a href="logout.php">Logout</a>
           </nav>
@@ -47,7 +47,7 @@
           <fieldset>
             <legend>DEALS & OFFERS</legend>
 
-            <h4>Already know what kind of train deal you're looking for but not sure what's on offer? Pick a type of deal below to see some of great savings you can make when booking UK train travel with us.</h4>
+            <h4>Already know what kind of train deal you're looking for but not sure what's on offer? Pick a type of deal below to see some of great savings you can make when booking BD train travel with us.</h4>
 
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">

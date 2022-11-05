@@ -42,9 +42,9 @@
     <!-- Top Bars (end) -->
 
       <tr>
-        <td style="padding-bottom: 100px; ">
+        <td style="padding-bottom: 100px">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Album
+          Change Password
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -56,58 +56,35 @@
           </ul>
         </td>
         <td style="padding: 80px">
-          <fieldset>
-            <legend>ALBUM</legend>
-            <form action="" method="post" enctype="multipart/form-data">
-              <table align="center">
-                <tr>
-                  <td>
-                    <img
-                      src="img/album/seats_1.jpg"
-                      alt="img_1"
-                      width="250px" height="150px"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="img/album/train_1.jpg"
-                      alt="img_2"
-                      width="250px" height="150px"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="img/album/seat_2.png" alt="img_3" width="250px" height="150px"/>
-                  </td>
-                  <td>
-                    <img
-                      src="img/album/train_2.jpg"
-                      alt="img_4"
-                      width="250px" height="150px"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="img/album/seats_3.jpg"
-                      alt="img_5"
-                      width="250px" height="150px"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="img/album/train_3.jpg"
-                      alt="img_6"
-                      width="250px" height="150px"
-                    />
-                  </td>
-                </tr>
-              </table>
-            </form>
-          </fieldset>
-        </td>
+        <fieldset>
+      <legend>CHANGE PASSWORD</legend>
+      <table>
+        <tr>
+          <td>Current Password </td>
+          <td>:</td>
+          <td><input type="password" name="currentPass" value=""></td>
+        </tr>
+        <tr>
+          <td style="color: green;">New Password </td>
+          <td>:</td>
+          <td><input type="password" name="newPass" value=""></td>
+        </tr>
+        <tr>
+          <td style="color: red;">Retype New Password </td>
+          <td>:</td>
+          <td><input type="password" name="retypedPass" value=""></td>
+        </tr>
+      </table>
+      <hr>
+      <table>
+        <tr>
+          <td>
+          <td><input type="submit" name="btn" value="Submit"></td>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </td>
       </tr>
 
       <tr align="center">

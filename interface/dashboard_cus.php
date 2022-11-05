@@ -7,7 +7,7 @@
     <table
     border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
           <!-- Top Bars (start) -->
@@ -42,21 +42,19 @@
     <!-- Top Bars (end) -->
 
       <tr>
-        <td style="padding-bottom: 100px">
+        <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Album
+          Dashboard
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="dashboard.php">Dashboard</a></li>
-            <li><a href="album.php">View Album</a></li>
-            <li><a href="editAlbum.php">Edit Album</a></li>
-            <li><a href="editAlbum.php">Edit Album</a></li>
-            <li><a href="editAlbum.php">Edit Album</a></li>
+            <li><a href="viewProfile.php">View Profile</a></li>
+            <li><a href="editProfile.php">Edit Profile</a></li>
+            <li><a href="viewAlbum.php">View Album</a></li>
+            <li><a href="profilePicture.php">Change Profile Picture</a></li>
+            <li><a href="changePass.php">Change Password</a></li>
+            <li><a href="viewTicket.php">View Ticket Cart</a></li>
           </ul>
-        </td>
-        <td>
-          
         </td>
       </tr>
 

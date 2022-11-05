@@ -37,7 +37,7 @@
             <a href="login.php">Login</a> |
             <a href="register.php">Registration</a> |
             <a href="deals&offers_pub.php">Deals/Offers</a> |
-            <a href="counter.php">Counters</a> |
+            <a href="counters.php">Counters</a> |
             <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>

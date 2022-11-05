@@ -1,12 +1,11 @@
-<!-- Customer UI -->
+<!-- Employee UI -->
 
 <html>
   <head>
-    <title>Album</title>
+    <title>Facilities</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="" method="post" enctype="multipart/form-data">
     <table
     border="2"
       align="center"
@@ -33,11 +32,11 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters_cus.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
+            <a href="empHome.php">Home</a> |
+            <a href="dashboard_emp.php">Dashboard</a> |
+            <a href="deals&offers_emp.php">Deals/Offers</a> |
+            <a href="counters_emp.php">Counters</a> |
+            <a href="feedback_emp.php">Feedback</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
@@ -47,50 +46,58 @@
       <tr>
         <td style="padding: 80px">
           <fieldset>
-            <legend>ALBUM</legend>
+            <legend>FACILITIES</legend>
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">
                 <tr>
-                  <td>
+                  <td style="padding: 20px">
+                    <h3>Food </h3>
                     <img
-                      src="img/album/seats_1.jpg"
+                      src="img/icons/drinking-water.png"
                       alt="img_1"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
-                  <td>
+                  <td style="padding: 20px">
+                     <h3>Wi-Fi</h3>
                     <img
-                      src="img/album/train_1.jpg"
+                      src="img/icons/wifi.png"
                       alt="img_2"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/album/seat_2.png" alt="img_3" width="250px" />
+                    
+                    <h3>Medicated seats</h3>
+                    <img src="img/icons/seat.png" alt="img_3" width="100px" />
                   </td>
-                  <td>
+
+                  <td style="padding: 20px">
+                    <h3>Blanket</h3>
                     <img
-                      src="img/album/train_2.jpg"
+                      src="img/icons/blanket.png"
                       alt="img_4"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td style="padding: 20px">
+                    <h3>Prayer Room</h3>
                     <img
-                      src="img/album/seats_3.jpg"
+                      src="img/icons/mosque.png"
                       alt="img_5"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
-                  <td>
+                  <td style="padding: 20px">
+                    <h3>Play Room</h3>
                     <img
-                      src="img/album/train_3.jpg"
+                      src="img/icons/playtime.png"
                       alt="img_6"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
                 </tr>
@@ -103,14 +110,13 @@
       <tr align="center">
         <td colspan="2">
           <nav>
-            <a href="t&c_log.php">Terms & Conditions</a> |
-            <a href="privacyPolicy_log.php">Privacy Policy</a> |
-            <a href="aboutUs_log.php">About Us</a>
+            <a href="t&c_emp.php">Terms & Conditions</a> |
+            <a href="privacyPolicy_emp.php">Privacy Policy</a> |
+            <a href="aboutUs_emp.php">About Us</a>
           </nav>
-          <footer style="margin: 10px">Copyright &copy; 2022</footer>
+          <footer style="margin: 10px">Copyright &copy; 2017</footer>
         </td>
       </tr>
     </table>
-    </form>
   </body>
 </html>

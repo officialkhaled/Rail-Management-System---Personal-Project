@@ -1,9 +1,5 @@
-* {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
 body {
-  background-color: snow;
+  background-color: rgb(255, 255, 255);
 }
 
 /* unvisited link */

@@ -1,4 +1,4 @@
-<!-- Public UI -->
+<!-- Customer UI -->
 
 <!-- HTML -->
 <html>
@@ -15,8 +15,8 @@
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
       >
-<!-- Top Bars (start) -->
-<tr>
+        <!-- Top Bars (start) -->
+    <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
             <!--<a href="contactUs_log.php">Contact Us</a>-->
@@ -35,16 +35,17 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.php">Home</a> |
-            <a href="login.php">Login</a> |
-            <a href="register.php">Registration</a> |
-            <a href="deals&offers_pub.php">Deals/Offers</a> |
-            <a href="counters.php">Counters</a> |
-            <a href="contactUs.php">Contact Us</a>
+            <a href="cusHome.php">Home</a> |
+            <a href="dashboard_cus.php">Dashboard</a> |
+            <a href="deals&offers.php">Deals/Offers</a> |
+            <a href="counters_cus.php">Counters</a> |
+            <a href="feedback.php">Feedback</a> |
+            <a href="logout.php">Logout</a>
           </nav>
         </td>
       </tr>
     <!-- Top Bars (end) -->
+
 
         <tr>
           <td style="padding: 80px">

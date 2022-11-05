@@ -72,6 +72,14 @@
                                 <td>Password </td>
                                 <td>:</td>
                                 <td><input type="password" name="password" value="" required></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3">
+                                <input type="radio" name="usertype" value="admin"/> Admin
+                                <input type="radio" name="usertype" value="employee"/> Employee
+                                <input type="radio" name="usertype" value="customer"/> Customer
+                              </td>
+                            </tr>
                         </table>
                         <hr>
                         <table>
@@ -80,14 +88,14 @@
                             <tr>
                                 <td>
                                 <td><input type="submit" name="btn" value="Submit"></td>
-            </td>
-            <td><a href="forgotPass.php">Forgot Password?</a></td>
-        </tr>
-    </table>
-    </fieldset>
-    </form>
-    </td>
-    </tr>
+                            </td>
+                            <td><a href="forgotPass.php">Forgot Password?</a></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+              </td>
+          </tr>
 
     <tr align="center">
         <td>

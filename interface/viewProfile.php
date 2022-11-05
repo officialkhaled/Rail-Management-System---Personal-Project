@@ -1,21 +1,18 @@
-<!-- Customer UI -->
-
-<!-- HTML -->
 <html>
   <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <table
     border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-<!-- Top Bars (start) -->
-<tr>
-      <td>
+          <!-- Top Bars (start) -->
+    <tr>
+      <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
             <!--<a href="contactUs_log.php">Contact Us</a>-->
             <h1>Train Station System</h1>
@@ -31,7 +28,7 @@
       </td>
     </tr>
       <tr>
-        <td>
+        <td colspan="2">
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="cusHome.php">Home</a> |
             <a href="dashboard_cus.php">Dashboard</a> |
@@ -45,49 +42,55 @@
     <!-- Top Bars (end) -->
 
       <tr>
-        <td style="padding: 80px">
-          <fieldset>
-            <legend>CONTACT US</legend>
-            <form action="contactUsStore.php" method="post" enctype="multipart/form-data">
-              <table align="center">
-                <tr>
-                  <td colspan="2">
-                    <h3 align="center">Thank you for reaching us!</h3>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="name">Name</label><br><input type="text" name="name" required>
-                  </td>
-                  <td>
-                  <label for="city">City</label><br><input type="text" name="city" required>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  <label for="phoneNo">Phone no</label><br><input type="number" name="phoneNo" required>
-                  </td>
-                  <td>
-                  <label for="email">Email</label><br><input type="email" name="email">
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    Message <br> <textarea name="message" rows="5" cols="50"></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="submit" name="btn" value="Submit">
-                  </td>
-                </tr>
-              </table>
-            </form>
-          </fieldset>
+        <td style="padding-bottom: 100px">
+          <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
+          View Profile
+          </h4>
+          <hr style="margin: 0 10px" />
+          <ul style="margin-left: 20px; margin-top: 20px">
+            <li><a href="viewProfile.php">View Profile</a></li>
+            <li><a href="editProfile.php">Edit Profile</a></li>
+            <li><a href="viewAlbum.php">View Album</a></li>
+            <li><a href="profilePicture.php">Change Profile Picture</a></li>
+            <li><a href="changePass.php">Change Password</a></li>
+          </ul>
         </td>
+        <td style="padding: 80px">
+        <fieldset>
+        <legend>PROFILE</legend>
+        <form action="regCheck.php" method="post" enctype="multipart/form-data">
+            <table align="center">
+                <tr>
+                    <td>Name </td>
+                    <td> : </td>
+                    <td> <?php  ?></td>
+                    <td rowspan="6"><img src="img/profile-user.png" alt="profile picture" width="70px" height="70px"><a href="profilePicture.php"><br>Change</a></td>
+                </tr>
+                <tr>
+                    <td>Email </td>
+                    <td> : </td>
+                    <td><?php  ?></td>
+                </tr>
+                <tr>
+                    <td>Gender </td>
+                    <td> : </td>
+                    <td><?php  ?></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth </td>
+                    <td> : </td>
+                    <td><?php  ?></td>
+                </tr>
+                <tr>
+                    <td><a href="editProfile.php">Edit Profile</a></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+  </td>
       </tr>
 
-      <tr align="center" style="margin: 10px 0;">
+      <tr align="center">
         <td colspan="2">
           <nav>
             <a href="t&c_log.php">Terms & Conditions</a> |
@@ -100,19 +103,3 @@
     </table>
   </body>
 </html>
-
-
-<!-- PHP -->
-<?php 
-
-    if(isset($_POST['err'])){
-        if($_GET['err'] == 'invalid_request'){
-            echo "<h2> Invalid request error </h2>";
-        }
-
-        if($_POST['err'] == 'null'){
-            echo "<h2> Empty Fields! </h2>";
-        }
-    }
-
-?>

@@ -9,37 +9,40 @@
     <table
     border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-      <tr>
-        <td colspan="2">
+      <!-- Top Bars (start) -->
+    <tr>
+      <td>
+          <nav style="margin: 10px 10px; display: block; float: left">
+            <!--<a href="contactUs_log.php">Contact Us</a>-->
+            <h1>Train Station System</h1>
+            <h5>A Complete Application for Railway Train System</h5>
+          </nav>
           <img
             src="img/train-station.png"
             alt="Company Logo"
-            width="70px"
-            style="margin: 10px 20px"
+            width="70px" height="70px"
+            style="margin: 30px 20px; 
+            float:right"
           />
-          <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Dashboard</a> |
-            <a href="album.html">Album</a> |
-            <a href="deals&offers.html">Deals/Offers</a> |
-            <a href="contactUs.html">Contact Us</a> |
-            <a href="logout.php">Logout</a>
-          </nav>
-        </td>
-      </tr>
-
+      </td>
+    </tr>
       <tr>
-        <td align="center">
-          <nav style="margin: 15px 20px">
-            <a href="dashboard.html">Dashboard</a> |
-            <a href="album.html">View Album</a> |
-            <a href="editAlbum.html">Edit Album</a>
+        <td>
+          <nav style="margin: 30px 20px; display: block; float: right">
+            <a href="publicHome.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="register.php">Registration</a> |
+            <a href="deals&offers_pub.php">Deals/Offers</a> |
+            <a href="counters.php">Counters</a> |
+            <a href="contactUs.php">Contact Us</a>
           </nav>
         </td>
       </tr>
-      <!-- Change -->
+    <!-- Top Bars (end) -->
+
       <tr>
         <td style="padding: 80px">
           <fieldset>
@@ -47,53 +50,51 @@
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">
                 <tr>
-                  <td>
+                  <td style="padding: 20px">
                     <h3>Food </h3>
                     <img
-                      src="img/drinking-water.png"
+                      src="img/icons/drinking-water.png"
                       alt="img_1"
                       width="100px"
                     />
                   </td>
-                  <td>
+                  <td style="padding: 20px">
                      <h3>Wi-Fi</h3>
-
                     <img
-                      src="img/wifi.png"
+                      src="img/icons/wifi.png"
                       alt="img_2"
                       width="100px"
                     />
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    
+                  <td style="padding: 20px">
                     <h3>Medicated seat</h3>
-                    <img src="img/seat.png" alt="img_3" width="100px" />
+                    <img src="img/icons/seat.png" alt="img_3" width="100px" />
                   </td>
 
-                  <td>
+                  <td style="padding: 20px">
                     <h3> Blanket</h3>
                     <img
-                      src="img/blanket.png"
+                      src="img/icons/blanket.png"
                       alt="img_4"
                       width="100px"
                     />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td style="padding: 20px">
                     <h3>Prayer Room</h3>
                     <img
-                      src="img/mosque.png"
+                      src="img/icons/mosque.png"
                       alt="img_5"
                       width="100px"
                     />
                   </td>
-                  <td>
+                  <td style="padding: 20px">
                     <h3>Play Room</h3>
                     <img
-                      src="img/playtime.png"
+                      src="img/icons/playtime.png"
                       alt="img_6"
                       width="100px"
                     />

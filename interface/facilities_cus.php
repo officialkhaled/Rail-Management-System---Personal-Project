@@ -2,11 +2,10 @@
 
 <html>
   <head>
-    <title>Album</title>
+    <title>Facilities</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="" method="post" enctype="multipart/form-data">
     <table
     border="2"
       align="center"
@@ -47,50 +46,58 @@
       <tr>
         <td style="padding: 80px">
           <fieldset>
-            <legend>ALBUM</legend>
+            <legend>FACILITIES</legend>
             <form action="" method="post" enctype="multipart/form-data">
               <table align="center">
                 <tr>
-                  <td>
+                  <td style="padding: 20px">
+                    <h3>Food </h3>
                     <img
-                      src="img/album/seats_1.jpg"
+                      src="img/icons/drinking-water.png"
                       alt="img_1"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
-                  <td>
+                  <td style="padding: 20px">
+                     <h3>Wi-Fi</h3>
                     <img
-                      src="img/album/train_1.jpg"
+                      src="img/icons/wifi.png"
                       alt="img_2"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/album/seat_2.png" alt="img_3" width="250px" />
+                    
+                    <h3>Medicated seats</h3>
+                    <img src="img/icons/seat.png" alt="img_3" width="100px" />
                   </td>
-                  <td>
+
+                  <td style="padding: 20px">
+                    <h3>Blanket</h3>
                     <img
-                      src="img/album/train_2.jpg"
+                      src="img/icons/blanket.png"
                       alt="img_4"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td style="padding: 20px">
+                    <h3>Prayer Room</h3>
                     <img
-                      src="img/album/seats_3.jpg"
+                      src="img/icons/mosque.png"
                       alt="img_5"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
-                  <td>
+                  <td style="padding: 20px">
+                    <h3>Play Room</h3>
                     <img
-                      src="img/album/train_3.jpg"
+                      src="img/icons/playtime.png"
                       alt="img_6"
-                      width="250px"
+                      width="100px"
                     />
                   </td>
                 </tr>
@@ -111,6 +118,5 @@
         </td>
       </tr>
     </table>
-    </form>
   </body>
 </html>
