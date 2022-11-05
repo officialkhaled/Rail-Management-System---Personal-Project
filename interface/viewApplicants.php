@@ -1,20 +1,21 @@
+<!-- Admin -->
+
 <html>
   <head>
-    <title>Edit Station</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <table
-    border="2"
+      border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-          <!-- Top Bars (start) -->
+    <!-- Top Bars (start) -->
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -33,7 +34,6 @@
             <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
-            <a href="feedback.php">Feedback</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
@@ -43,7 +43,7 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Edit Station
+          View Applicants
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -54,53 +54,40 @@
           </ul>
         </td>
         <td style="padding: 80px">
-          <fieldset>
-            <legend>EDIT STATIONS</legend>
-              <table>
-              <tr>
-                <nav style="margin: 20px;">
-                    <td><strong>City</strong></td>
-                    <td><strong>Address</strong></td>
-                    <td><strong>Contact</strong></td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Dhaka</td>
-                    <td>Airport Railway Station</td>
-                    <td>+880 17526 978456</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Chittagong</td>
-                    <td>Pahartali Railway Station</td>
-                    <td>+880 15348 987564</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Noakhali</td>
-                    <td>Sonaimuri Railway Station</td>
-                    <td>+880 19576 485342</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                  <td>
-                    <input type="submit" name="addStation" value="Add station">
-                  </td>
-                  <td>
-                    <input type="submit" name="deleteStation" value="Delete station">
-                  </td>
-                  </td>
-                  <td>
-                    <input type="submit" name="addNo" value="Contact no">
-                  </td>
-                </nav>
-              </tr>
-              </table>
-          </fieldset>
+        <fieldset>
+          <legend>APPLICANTS</legend>
+          <table style="margin: 30px;"s>
+            <tr>
+              <nav>
+                <td><strong>Name</strong></td>
+                <td><strong>Email</strong></td>
+                <td><strong>Position</strong></td>
+              </nav>
+            </tr>
+            <tr>
+              <nav>
+                <td>Jahangir Haque</td>
+                <td>jahangir@aiub.edu</td>
+                <td>Administration</td>
+              </nav>
+            </tr>
+            <tr>
+              <nav>
+                <td>Rafique Uddin</td>
+                <td>rafiq@nsu.edu</td>
+                <td>Manager</td>
+              </nav>
+            </tr>
+            <tr>
+              <nav>
+                <td>Farhad Hossain</td>
+                <td>farhad@nsu.edu</td>
+                <td>Security Officer</td>
+              </nav>
+            </tr>
+          </table>
+        </fieldset>
+        
         </td>
       </tr>
 

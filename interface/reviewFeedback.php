@@ -4,13 +4,14 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <form action="checkFeedback.php" method="post" enctype="multipart/form-data">
     <table
-    border="2"
+      border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-          <!-- Top Bars (start) -->
+    <!-- Top Bars (start) -->
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
@@ -43,62 +44,26 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Edit Station
+          Review Feedbacks
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
             <li><a href="viewStation.php">View Station</a></li>
             <li><a href="editStation.php">Edit Station</a></li>
-            <li><a href="reviewFeedback.php">Review Feedback</a></li>
+            <li><a href="reviewFeedback.php">Review Feedbacks</a></li>
             <li><a href="viewApplicants.php">View Applicants</a></li>
           </ul>
         </td>
         <td style="padding: 80px">
           <fieldset>
-            <legend>EDIT STATIONS</legend>
+            <legend>FEEDBACKS</legend>
+            
               <table>
-              <tr>
-                <nav style="margin: 20px;">
-                    <td><strong>City</strong></td>
-                    <td><strong>Address</strong></td>
-                    <td><strong>Contact</strong></td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Dhaka</td>
-                    <td>Airport Railway Station</td>
-                    <td>+880 17526 978456</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Chittagong</td>
-                    <td>Pahartali Railway Station</td>
-                    <td>+880 15348 987564</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Noakhali</td>
-                    <td>Sonaimuri Railway Station</td>
-                    <td>+880 19576 485342</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
+                <tr>
                   <td>
-                    <input type="submit" name="addStation" value="Add station">
+                    <input type="submit" name="chk" value="Check Reviews">
                   </td>
-                  <td>
-                    <input type="submit" name="deleteStation" value="Delete station">
-                  </td>
-                  </td>
-                  <td>
-                    <input type="submit" name="addNo" value="Contact no">
-                  </td>
-                </nav>
-              </tr>
+                </tr>
               </table>
           </fieldset>
         </td>
@@ -115,5 +80,6 @@
         </td>
       </tr>
     </table>
+    </form>
   </body>
 </html>

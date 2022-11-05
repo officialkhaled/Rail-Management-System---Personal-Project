@@ -55,7 +55,7 @@
         </td>
         <td style="padding: 80px">
           <fieldset>
-            <legend>View Stations</legend>
+            <legend>VIEW STATIONS</legend>
               <table>
               <tr>
                 <nav style="margin: 20px;">
