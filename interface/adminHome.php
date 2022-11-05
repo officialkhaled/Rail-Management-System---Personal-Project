@@ -42,7 +42,7 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
+            <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
             <a href="logout.php">Logout</a>
