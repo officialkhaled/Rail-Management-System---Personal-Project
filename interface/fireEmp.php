@@ -1,12 +1,20 @@
 <!-- Admin UI -->
 
+<!-- PHP -->
+<?php 
+
+  session_start();
+
+?>
+
+<!-- HTML -->
 <html>
   <head>
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="fireCheck_admin.php" method="post" enctype="multipart/form-data">
     <table
       border="2"
       align="center"
@@ -45,7 +53,7 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          View Applicants
+          Hire Employee
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -56,52 +64,31 @@
           </ul>
         </td>
         <td style="padding: 80px">
-        <fieldset>
-          <legend>APPLICANTS</legend>
-          <table style="margin: 30px;"s>
-            <tr>
-              <nav>
-                <td><strong>Name</strong></td>
-                <td><strong>Email</strong></td>
-                <td><strong>Position</strong></td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td>Jahangir Haque</td>
-                <td>jahangir@aiub.edu</td>
-                <td>Administration</td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td>Rafique Uddin</td>
-                <td>rafiq@nsu.edu</td>
-                <td>Manager</td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td>Farhad Hossain</td>
-                <td>farhad@nsu.edu</td>
-                <td>Security Officer</td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td colspan="3"><hr></td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td><input type="submit" name="addEmp" value="Hire Employee"><a href="hireEmp.php"></a></td>
-                <td><input type="submit" name="updateEmp" value="Update Employee"><a href="updateEmp.php"></a></td>
-                <td><input type="submit" name="deleteEmp" value="Fire Employee"><a href="fireEmp.php"></a></td>
-              </nav>
-            </tr>
-          </table>
-        </fieldset>
-        
+          <form action="regCheck.php"  method="post" enctype="multipart/form-data">
+            <fieldset>
+              <legend>FIRE EMPLOYEE</legend>
+              <table>
+                <tr>
+                  <input type="checkbox" name="selectEmp" value="emp_1">
+                  <label for="emp_1">
+                    Sadia Hossain
+                </label> <br><br>
+                  <input type="checkbox" name="selectEmp" value="emp_2"> <label for="emp_2">
+                    Sadman Pranto
+                </label> <br><br>
+                  <input type="checkbox" name="selectEmp" value="emp_3"> <label for="emp_3">
+                    Moinul Islam
+                </label> <br><br>
+                  <input type="checkbox" name="selectEmp" value="emp_4"> 
+                  <label for="emp_4">
+                    Saptanil Ghose
+                </label> <br><br>
+                </tr>
+              </table>
+
+              <input type="submit" name="btn" id="Submit" />
+            </fieldset>
+          </form>
         </td>
       </tr>
 

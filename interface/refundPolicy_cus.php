@@ -12,7 +12,7 @@
       width="860px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-          <!-- Top Bars (start) -->
+    <!-- Top Bars (start) -->
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
@@ -44,7 +44,7 @@
 
       <tr>
         <td style="padding: 80px">
-          <!--refund policy-->
+          <!-- Refund policy -->
           <h1>Refund Policy</h1>
 
           <p>

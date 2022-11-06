@@ -1,6 +1,7 @@
 **Name | Email | City | Phone number | Message**
 
-Khaled Hossain | khaled@aiub.edu | Dhaka | 01572362997 | Hello
-Sadia  | sadia@aiub.edu | Dhaka | 0178798525 | Hello!
-Sadman Pranto | sadman@aiub.edu | Chittagong | 0187236597 | This is not an issue.
-Abdullah | abdullah@student.edu | Rajshahi | 01972365478 | This is to let you know.
+Khaled Hossain | khaled@aiub.edu | Dhaka | 01572362997 | A good application, really liked it!
+Sadia  | sadia@aiub.edu | Dhaka | 0178798525 | Awesome, thanks for existing.
+Sadman Pranto | sadman@aiub.edu | Chittagong | 0187236597 | Very user friendly.
+Abdullah | abdullah@student.edu | Rajshahi | 01972365478 | Would love to see the complete application in work. Thank you.
+

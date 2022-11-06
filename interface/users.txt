@@ -1,6 +1,9 @@
 ** Username | Password | Usertype | Name | Email | Gender | Date of Birth (YYYY-MM-DD)**
 
 khaled | abc | customer | Khaled Hossain | khaled@aiub.edu | Male | 2020-07-02
-sadia | def | customer | Sadia Hossain | sadia@aiub.edu | Female | 2022-10-06
-
+sadia | def | employee | Sadia Hossain | sadia@aiub.edu | Female | 2022-10-06
 abdul | abc | admin | Abdullah Sheikh | abdullah@student.edu | Male | 2019-02-13
+
+pranto | def | employee | Sadman Pranto | pranto@aiub.edu | Male | 2022-11-10
+saptanil | def | employee | Saptanil Ghose | saptanil@aiub.edu | Male | 2022-08-10
+moinul | def | employee | Moinul Islam | moinul@aiub.edu | Male | 2020-11-10

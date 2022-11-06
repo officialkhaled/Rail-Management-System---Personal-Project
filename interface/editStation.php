@@ -86,16 +86,17 @@
                 </nav>
               </tr>
               <tr>
+              <nav>
+                <td colspan="3"><hr></td>
+              </nav>
+            </tr>
+              <tr>
                 <nav>
                   <td>
                     <input type="submit" name="addStation" value="Add station">
                   </td>
                   <td>
                     <input type="submit" name="deleteStation" value="Delete station">
-                  </td>
-                  </td>
-                  <td>
-                    <input type="submit" name="addNo" value="Contact no">
                   </td>
                 </nav>
               </tr>

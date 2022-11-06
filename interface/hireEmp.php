@@ -1,12 +1,20 @@
 <!-- Admin UI -->
 
+<!-- PHP -->
+<?php 
+
+
+
+?>
+
+<!-- HTML -->
 <html>
   <head>
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="hireCheck_admin.php" method="post" enctype="multipart/form-data">
     <table
       border="2"
       align="center"
@@ -45,7 +53,7 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          View Applicants
+          Hire Employee
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -56,52 +64,54 @@
           </ul>
         </td>
         <td style="padding: 80px">
-        <fieldset>
-          <legend>APPLICANTS</legend>
-          <table style="margin: 30px;"s>
-            <tr>
-              <nav>
-                <td><strong>Name</strong></td>
-                <td><strong>Email</strong></td>
-                <td><strong>Position</strong></td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td>Jahangir Haque</td>
-                <td>jahangir@aiub.edu</td>
-                <td>Administration</td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td>Rafique Uddin</td>
-                <td>rafiq@nsu.edu</td>
-                <td>Manager</td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td>Farhad Hossain</td>
-                <td>farhad@nsu.edu</td>
-                <td>Security Officer</td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td colspan="3"><hr></td>
-              </nav>
-            </tr>
-            <tr>
-              <nav>
-                <td><input type="submit" name="addEmp" value="Hire Employee"><a href="hireEmp.php"></a></td>
-                <td><input type="submit" name="updateEmp" value="Update Employee"><a href="updateEmp.php"></a></td>
-                <td><input type="submit" name="deleteEmp" value="Fire Employee"><a href="fireEmp.php"></a></td>
-              </nav>
-            </tr>
-          </table>
-        </fieldset>
-        
+          <form action="regCheck.php"  method="post" enctype="multipart/form-data">
+            <fieldset>
+              <legend>HIRE EMPLOYEE</legend>
+              <table>
+                <tr>
+                  <td>Name</td>
+                  <td>:</td>
+                  <td><input type="text" name="name" value="" /></td>
+                </tr>
+
+                <tr>
+                  <td>Email</td>
+                  <td>:</td>
+                  <td><input type="email" name="email" value="" /></td>
+                </tr>
+                <tr>
+                  <td>Username</td>
+                  <td>:</td>
+                  <td><input type="text" name="username" value="" /></td>
+                </tr>
+                <tr>
+                  <td>Password</td>
+                  <td>:</td>
+                  <td><input type="password" name="password" value="" /></td>
+                </tr>
+              </table>
+              <hr />
+              <table>
+                <tr>
+                  <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="gender" value="Male" /> Male <input
+                    type="radio" name="gender" value="Female" /> Female
+                    <input type="radio" name="gender" value="Other" /> Other
+                  </fieldset>
+                </tr>
+                <tr>
+                  <fieldset>
+                    <legend>Date of Birth</legend>
+                    <input type="date" name="dob" value="" />
+                  </fieldset>
+                </tr>
+              </table>
+              <hr />
+              <input type="submit" name="btn" id="Submit" />
+              <input type="reset" name="rst" id="Reset" />
+            </fieldset>
+          </form>
         </td>
       </tr>
 
