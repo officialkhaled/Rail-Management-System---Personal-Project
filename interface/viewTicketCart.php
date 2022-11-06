@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Dashboard</title>
+    <title>Ticket Cart</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -44,7 +44,7 @@
       <tr>
         <td style="padding-bottom: 100px">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Edit Profile
+          View Ticket Cart
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -58,35 +58,13 @@
         </td>
         <td style="padding: 80px">
           <fieldset>
-          <legend>EDIT PROFILE</legend>
+          <legend>TICKET CART</legend>
             <form action="regCheck.php" method="post" enctype="multipart/form-data">
-              <table align="center">
+              <table align="center" style="margin: 30px">
                 <tr>
-                    <td>Name</td>
-                    <td>:</td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>:</td>
-                    <td><input type="email" name="email"></td>
-                </tr>
-                <tr>
-                    <td>Gender</td>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" value="Male">Male 
-                        <input type="radio" value="Female">Female 
-                        <input type="radio" value="Other">Other 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Date of Birth</td>
-                    <td>:</td>
-                    <td><input type="date" name="date"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" name="btn" value="Submit"></td>
+                  <td>
+                  <h2>Still under development!</h2>
+                  </td>
                 </tr>
               </table>
             </form>

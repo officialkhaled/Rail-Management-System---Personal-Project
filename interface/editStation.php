@@ -93,10 +93,10 @@
               <tr>
                 <nav>
                   <td>
-                    <input type="submit" name="addStation" value="Add station">
+                    <button type="reset" onclick="location.href='addStation_admin.php'">Add station</button>
                   </td>
                   <td>
-                    <input type="submit" name="deleteStation" value="Delete station">
+                  <button type="reset" onclick="location.href='deleteStation_admin.php'">Delete station</button>
                   </td>
                 </nav>
               </tr>

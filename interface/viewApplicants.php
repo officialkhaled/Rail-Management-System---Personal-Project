@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Dashboard</title>
+    <title>View Applicants</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -95,15 +95,23 @@
             </tr>
             <tr>
               <nav>
-                <td><input type="submit" name="addEmp" value="Hire Employee"></td>
+                <!--
+                <td><input type="submit" name="addEmp" value="Hire Employee"></td> 
                 <td><input type="submit" name="updateEmp" value="Update Employee" onclick="msg()"></td>
                 <td><input type="submit" name="deleteEmp" value="Fire Employee"></td>
+                -->
+                <td><button type="reset" onclick="location.href='hireEmp.php'">Hire Employee</button></td>
+                <!--
+                <td><button type="reset" onclick="location.href='updateEmp.php'">Update Employee</button></td>
+                -->
+                <td><input type="submit" name="updateEmp" value="Update Employee" onclick="msg()"></td>
+                <td><button type="reset" onclick="location.href='fireEmp.php'">Fire Employee</button></td>
               </nav>
             </tr>
           </table>
         </fieldset>
         </td>
-        
+
       </tr>
 
 <!-- script for under developed buttons -->

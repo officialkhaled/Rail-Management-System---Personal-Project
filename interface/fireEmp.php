@@ -10,7 +10,7 @@
 <!-- HTML -->
 <html>
   <head>
-    <title>Dashboard</title>
+    <title>Fire Employee</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -85,8 +85,7 @@
                 </label> <br><br>
                 </tr>
               </table>
-
-              <input type="submit" name="btn" id="Submit" />
+              <button type="reset" onclick="location.href='fireCheck_admin.php'">Next</button>
             </fieldset>
           </form>
         </td>

@@ -1,17 +1,5 @@
 <!-- PHP -->
-<?php
 
-    if (isset($_POST['err'])) {
-        if ($_POST['err'] == 'invalid_request') {
-            echo "<h2> Invalid request error! </h2>";
-        }
-
-        if ($_POST['err'] == 'null') {
-            echo "<h2> Username/Password is missing! </h2>";
-        }
-}
-
-?>
 
 <!-- HTML -->
 <html>
@@ -86,10 +74,10 @@
                             <tr><input type="checkbox">Remember Me</tr>
                             <tr><br><br></tr>
                             <tr>
+                              <td><a href="forgotPass.php">Forgot Password?</a></td>
                                 <td>
                                 <td><input type="submit" name="btn" value="Submit"></td>
                             </td>
-                            <td><a href="forgotPass.php">Forgot Password?</a></td>
                             </tr>
                         </table>
                     </fieldset>
