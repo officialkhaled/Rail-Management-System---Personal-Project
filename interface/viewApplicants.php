@@ -55,6 +55,7 @@
             <li><a href="viewApplicants.php">View Applicants</a></li>
           </ul>
         </td>
+
         <td style="padding: 80px">
         <fieldset>
           <legend>APPLICANTS</legend>
@@ -94,16 +95,23 @@
             </tr>
             <tr>
               <nav>
-                <td><input type="submit" name="addEmp" value="Hire Employee"><a href="hireEmp.php"></a></td>
-                <td><input type="submit" name="updateEmp" value="Update Employee"><a href="updateEmp.php"></a></td>
-                <td><input type="submit" name="deleteEmp" value="Fire Employee"><a href="fireEmp.php"></a></td>
+                <td><input type="submit" name="addEmp" value="Hire Employee"></td>
+                <td><input type="submit" name="updateEmp" value="Update Employee" onclick="msg()"></td>
+                <td><input type="submit" name="deleteEmp" value="Fire Employee"></td>
               </nav>
             </tr>
           </table>
         </fieldset>
-        
         </td>
+        
       </tr>
+
+<!-- script for under developed buttons -->
+<script>
+  function msg() {
+    alert("This function is still under development. Please check again later. Thank you.");
+  }
+</script>
 
       <tr align="center">
         <td colspan="2">
