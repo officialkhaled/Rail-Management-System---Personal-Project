@@ -17,7 +17,7 @@
     else{
         $myUser = fopen("users.txt", "a") or die("Unable to open file!");
         $_SESSION['users'] = $myUser;
-
+        
         $info = ['username' => $username, 'password'=> $password, 'name' => $name, 'email' => $email, 'gender'=> $gender, 'dob' => $dob];
 
         $info = $username." | ".$password." | ".$name." | ".$email." | ".$gender." | ".$dob."\r\n";

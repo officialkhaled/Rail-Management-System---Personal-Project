@@ -7,12 +7,11 @@
     <title>Pay The Fare</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Header File -->
-    <?php include "header_cus.php" ?>
+
 </head>
 
 <body>
-    <!--
+    
     <table
       border="2"
       align="center"
@@ -47,7 +46,7 @@
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr> -->
+      </tr> 
     <!-- Top Bars (end) -->
 
         <tr>
@@ -87,7 +86,7 @@
                         </tr>
                         <tr>
                             <td>D452</td>
-                            <td>Khaled</td>
+                            <td>Rubyea</td>
                             <td>+880 17563 984532</td>
                             <td>400/=</td>
                         </tr>
