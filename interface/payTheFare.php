@@ -95,9 +95,13 @@
 
 </fieldset> <br>
                         <table>
-                            <td>
-                                <input type="submit" name="btn" value="Home">
-                            </td>
+                            
+                            <tr>
+                                <td><em>*Please pay and collect your ticket from your closest counter.</em></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" name="btn" value="Home"></td>
+                            </tr>
                     </table>
     </form>
     </fieldset>
