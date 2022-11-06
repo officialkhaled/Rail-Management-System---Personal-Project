@@ -4,19 +4,23 @@
   <head>
     <title>About Us</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Header File -->
+    <?php include "header_admin.php" ?>
   </head>
   <body>
+    <!--
     <table
-    border="2"
+      border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-          <!-- Top Bars (start) -->
+
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
+            
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -34,13 +38,12 @@
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
-            <a href="deals&offers_admin.php">Deals/Offers</a> |
-            <a href="counters_admin.php">Counters</a> |
-            <a href="feedback_admin.php">Feedback</a> |
+            <a href="viewStation.php">Stations</a> |
+            <a href="viewApplicants.php">Applicants</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr>
+      </tr> -->
     <!-- Top Bars (end) -->
 
 
@@ -69,10 +72,7 @@
             <span id="W_Type4">Management System</span> as much as we enjoy
             offering them to you.
           </p>
-          <p>
-            I will keep posting more important posts on my Website for all of
-            you. Please give your support and love.
-          </p>
+
           <p style="font-weight: bold; text-align: center">
             Thanks For Visiting Our Site<br /><br />
             <span

@@ -3,8 +3,12 @@
   <head>
     <title>Employee_Album</title>
     <link rel="stylesheet" href="style.css" />
+
+        <!-- Header File -->
+        <?php include "header_emp.php" ?>
   </head>
   <body>
+    <!--
     <table
     border="2"
       align="center"
@@ -28,8 +32,7 @@
           </nav>
         </td>
       </tr>
-
-      <!-- Change -->
+        -->
       <tr>
 
         <td style="padding: 80px">
@@ -97,7 +100,8 @@
           </fieldset>
         </td>
       </tr>
-      <!-- Change -->
+
+      
       <tr align="center">
         <td colspan="2">
           <nav>

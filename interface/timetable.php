@@ -4,9 +4,12 @@
 <head>
     <title>View Fare</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Header File -->
+    <?php include "header.php" ?>
 </head>
 
 <body>
+    <!--
     <table border="1" align="center" width="650px" style="border-collapse: collapse; margin-top: 20px; ">
         <tr>
             <td>
@@ -20,7 +23,7 @@
                 </nav>
             </td>
         </tr>
-
+    -->
         <tr>
             <td style="padding: 80px">
                 <form method="post" action="loginCheck.php" enctype="">

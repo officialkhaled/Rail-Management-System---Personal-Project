@@ -2,12 +2,16 @@
   <head>
     <title>Career with Us</title>
     <link rel="stylesheet" href="style.css" />
+
+        <!-- Header File -->
+        <?php include "header_cus.php" ?>
   </head>
   <body>
+    <!--
     <table
       border="1"
       align="center"
-      width="650px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 20px"
     >
       <tr>
@@ -26,14 +30,12 @@
           </nav>
         </td>
       </tr>
-
+      -->
       <tr>
         <td style="padding: 80px">
           
 
           <h2><strong>Welcome to Kothin!</strong></h2>
-
-
 
           <p>
             Join us on Bangladesh railway and help us maintain the biggest train management system in the country as an <span> adminstrator</span>, <span> upper management role</span>, <span> basic employee</span> & <span> security officers</span>.

@@ -33,7 +33,7 @@
             <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
-            <a href="feedback.php">Feedback</a> |
+            <a href="viewApplicants.php">Applicants</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
@@ -92,11 +92,19 @@
             </tr>
               <tr>
                 <nav>
+                  <!--
                   <td>
                     <button type="reset" onclick="location.href='addStation_admin.php'">Add station</button>
                   </td>
                   <td>
                   <button type="reset" onclick="location.href='deleteStation_admin.php'">Delete station</button>
+                  </td>
+                  -->
+                  <td>
+                  <button type="reset" value="" onclick="msg()">Add station</button>
+                  </td>
+                  <td>
+                  <button type="reset" value="" onclick="msg()">Delete station</button>
                   </td>
                 </nav>
               </tr>
@@ -104,6 +112,13 @@
           </fieldset>
         </td>
       </tr>
+
+<!-- script for under developed buttons -->
+<script>
+  function msg() {
+    alert("This function is still under development. Please check again later. Thank you.");
+  }
+</script>
 
       <tr align="center">
         <td colspan="2">

@@ -4,19 +4,23 @@
   <head>
     <title>About Us</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Header File -->
+    <?php include "header_cus.php" ?>
   </head>
   <body>
+    <!-- 
     <table
     border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-          <!-- Top Bars (start) -->
+
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
+            
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -40,7 +44,7 @@
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr>
+      </tr> -->
     <!-- Top Bars (end) -->
 
 
@@ -68,10 +72,6 @@
             >. We hope you enjoy our
             <span id="W_Type4">Management System</span> as much as we enjoy
             offering them to you.
-          </p>
-          <p>
-            I will keep posting more important posts on my Website for all of
-            you. Please give your support and love.
           </p>
           <p style="font-weight: bold; text-align: center">
             Thanks For Visiting Our Site<br /><br />

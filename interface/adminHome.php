@@ -16,21 +16,25 @@
   <head>
     <title>Admin Home</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Header File -->
+    <?php include "header_admin.php" ?>
+
   </head>
 
   <body>
     <form action="loginCheck.php" method="post" enctype="multipart/form-data">
+      <!--
     <table
       border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-    <!-- Top Bars (start) -->
+
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -49,11 +53,11 @@
             <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
-            <a href="viewStation.php">Station</a> |
+            <a href="viewApplicants.php">Applicants</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr>
+      </tr> -->
     <!-- Top Bars (end) -->
 
       <tr>
@@ -124,6 +128,7 @@
             </td>
           </tr>
         </table>
+        
         <br>
         <table align="center">
           <tr>
@@ -133,9 +138,12 @@
           <a href="faq_cus.php">FAQ</a>
           </nav>
           </tr>
+          
         </table>
         </td>
       </tr>
+
+      <!-- Footer File <?php //include "footer.php" ?> -->
       
       <tr align="center">
         <td>
@@ -147,7 +155,8 @@
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
-    </table>
+
     </form>
+    
   </body>
 </html>

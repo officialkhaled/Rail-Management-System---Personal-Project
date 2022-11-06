@@ -4,19 +4,23 @@
   <head>
     <title>Facilities</title>
     <link rel="stylesheet" href="style.css" />
+    
+        <!-- Header File -->
+    <?php include "header_cus.php" ?>
   </head>
   <body>
+    <!--
     <table
     border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-      <!-- Top Bars (start) -->
+
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
+            
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -40,7 +44,7 @@
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr>
+      </tr> -->
     <!-- Top Bars (end) -->
 
       <tr>

@@ -2,8 +2,12 @@
   <head>
     <title>Change Password</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Header File -->
+    <?php include "header.php" ?>
   </head>
   <body>
+    <!--
     <table
     border="2"
       align="center"
@@ -26,7 +30,7 @@
           </nav>
         </td>
       </tr>
-
+-->
       <tr>
         <td style="padding: 80px">
           <form method="" action="" enctype="">

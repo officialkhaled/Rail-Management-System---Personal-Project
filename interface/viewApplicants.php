@@ -4,16 +4,18 @@
   <head>
     <title>View Applicants</title>
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <form action="" method="post" enctype="multipart/form-data">
+
     <table
       border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-    <!-- Top Bars (start) -->
+
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
@@ -39,7 +41,7 @@
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr>
+      </tr> 
     <!-- Top Bars (end) -->
 
       <tr>

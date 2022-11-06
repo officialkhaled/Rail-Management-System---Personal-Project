@@ -7,9 +7,9 @@
   </head>
   <body>
     <table
-    border="2"
+      border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
           <!-- Top Bars (start) -->
@@ -34,9 +34,8 @@
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="adminHome.php">Home</a> |
             <a href="dashboard_admin.php">Dashboard</a> |
-            <a href="deals&offers_admin.php">Deals/Offers</a> |
-            <a href="counters_admin.php">Counters</a> |
-            <a href="feedback_admin.php">Feedback</a> |
+            <a href="viewStation.php">Stations</a> |
+            <a href="viewApplicants.php">Applicants</a> |
             <a href="logout.php">Logout</a>
           </nav>
         </td>

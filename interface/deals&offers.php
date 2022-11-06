@@ -3,8 +3,12 @@
   <head>
     <title>Deals and Offers</title>
     <link rel="stylesheet" href="style.css" />
+
+        <!-- Header File -->
+        <?php include "header_cus.php" ?>
   </head>
   <body>
+    <!--
     <table
       border="2"
       align="center"
@@ -14,7 +18,7 @@
     <tr>
       <td>
           <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
+            
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -39,8 +43,7 @@
           </nav>
         </td>
       </tr>
-
-      <!-- Change -->
+-->
       <tr>
 
         <td style="padding: 80px">
