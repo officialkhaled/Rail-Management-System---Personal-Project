@@ -6,8 +6,10 @@
   <head>
     <title>Public Home</title>
     <link rel="stylesheet" href="style.css" />
+    
     <!-- Header File -->
     <?php include "header.php" ?>
+
   </head>
 
   <body>

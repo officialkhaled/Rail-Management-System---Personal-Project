@@ -5,15 +5,14 @@
     <title>Counter Timings</title>
     <link rel="stylesheet" href="style.css" />
 
-        <!-- Header File -->
-        <?php include "header_cus.php" ?>
+
 </head>
 
 <body>
-  <!--
+
     <table border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;">
 
     <tr>
@@ -43,7 +42,7 @@
             <a href="logout.php">Logout</a>
           </nav>
         </td>
-      </tr> -->
+      </tr>
     <!-- Top Bars (end) -->
 
     <tr>

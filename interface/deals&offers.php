@@ -4,15 +4,12 @@
     <title>Deals and Offers</title>
     <link rel="stylesheet" href="style.css" />
 
-        <!-- Header File -->
-        <?php include "header_cus.php" ?>
   </head>
   <body>
-    <!--
     <table
       border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
     <tr>
@@ -43,7 +40,7 @@
           </nav>
         </td>
       </tr>
--->
+
       <tr>
 
         <td style="padding: 80px">
