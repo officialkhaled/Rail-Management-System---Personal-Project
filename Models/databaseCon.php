@@ -3,7 +3,7 @@
     $host = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "webtech";
+    $dbname = "train_management_db";
 
     function getConnection(){
         global $host;

@@ -1,8 +1,8 @@
 <?php 
 
     session_start();
-    //session_destroy();
-    setcookie('status', 'true', time()-10, '/');
-    header('location: login.php');
+    session_destroy();
+    //setcookie('status', 'true', time()-10, '/');
+    header('location: ../views/login.php');
     
 ?>
