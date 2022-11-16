@@ -1,6 +1,7 @@
 <?php 
 
     session_start();
+    require_once "../models/userModel.php";
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -11,6 +12,23 @@
     $gender = $_POST['gender'];
     $dob = $_POST['dob'];
 
+    if($name == "" || $email == "" || $username == "" || $password == "" || $conPass == "" || $gender == "" || $dob == "") {
+        header('location: register.php?err=null');
+    } 
+    else{
+        $user = ['username' => $username, 'password'=> $password, 'name' => $name, 'email' => $email, 'gender'=> $gender, 'dob' => $dob];
+
+        $status = insertUser($user);
+
+        if($status){
+            header('location: ../views/login.php');
+        } else{
+            echo "Database Error!";
+        }
+    }
+    
+?>
+<!--
     if($name == "" || $email == "" || $username == "" || $password == "" || $conPass == "" || $gender == "" || $dob == "") {
         header('location: register.php?err=null');
     } 
@@ -26,5 +44,5 @@
         fclose($myUser);
         header('location: login.php');
     }
+-->
 
-?>
