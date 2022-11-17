@@ -13,7 +13,7 @@
     $dob = $_POST['dob'];
 
     if($name == "" || $email == "" || $username == "" || $password == "" || $conPass == "" || $gender == "" || $dob == "") {
-        header('location: register.php?err=null');
+        header('location: ../views/register.php?err=null');
     } 
     else{
         $user = ['username' => $username, 'password'=> $password, 'name' => $name, 'email' => $email, 'gender'=> $gender, 'dob' => $dob];

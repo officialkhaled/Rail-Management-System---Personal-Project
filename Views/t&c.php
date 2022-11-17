@@ -1,5 +1,11 @@
 <!-- Public -->
 
+<?php
+
+
+
+?>
+
 <html>
   <head>
     <title>Terms & Conditions</title>
@@ -204,9 +210,9 @@
       <tr align="center">
         <td>
           <nav>
-            <a href="t&c.html">Terms & Conditions</a> |
-            <a href="privacyPolicy.html">Privacy Policy</a> |
-            <a href="aboutUs.html">About Us</a>
+            <a href="t&c.php">Terms & Conditions</a> |
+            <a href="privacyPolicy.php">Privacy Policy</a> |
+            <a href="aboutUs.php">About Us</a>
           </nav>
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

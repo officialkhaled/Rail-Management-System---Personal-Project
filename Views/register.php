@@ -13,15 +13,14 @@
         }
     }
     
+    include_once "../assets/header.php";
 ?>
 
 <!-- HTML -->
 <html>
   <head>
     <title>Registration</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Header File -->
-    <?php include "header.php" ?>
+    <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <!--
@@ -64,7 +63,7 @@
 
       <tr>
         <td style="padding: 80px">
-          <form action="regCheck.php"  method="post" enctype="multipart/form-data">
+          <form action="../controllers/regCheck.php"  method="post" enctype="multipart/form-data">
             <fieldset>
               <legend>REGISTRATION</legend>
               <table>
