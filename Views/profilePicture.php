@@ -1,12 +1,10 @@
 <html>
   <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="../assets/style.css">
   </head>
-  <body>
 
+  <body>
     <table
     border="2"
       align="center"
@@ -21,7 +19,7 @@
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
           <img
-            src="img/train-station.png"
+            src="../assets/img/train-station.png"
             alt="Company Logo"
             width="70px" height="70px"
             style="margin: 30px 20px; 
@@ -37,7 +35,7 @@
             <a href="deals&offers.php">Deals/Offers</a> |
             <a href="counters_cus.php">Counters</a> |
             <a href="feedback.php">Feedback</a> |
-            <a href="logout.php">Logout</a>
+            <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
       </tr> 
@@ -61,12 +59,13 @@
         <td style="padding: 80px">
         <fieldset>
             <legend>PROFILE PICTURE</legend>
+            <form action="../controllers/pfpUploadCheck.php" method="post" enctype="multipart/form-data">
             <table>
                 <tr>
-                    <td><img src="img/profile-user.png" alt="pfp" style="width: 80;"></td>
+                    <td><img src="../fileUpload/<?php echo $user['pfp_data']; ?>" alt="Profile Picture" style="width: 80;"></td>
                 </tr>
                 <tr>
-                    <td><input type="file" name="image" value=""></td>
+                    <td><input type="file" name="image" value="image"></td>
                 </tr>
             </table>
             <hr>
@@ -77,6 +76,7 @@
                     </td>
                 </tr>
             </table>
+            </form>
         </fieldset>
   </td>
       </tr>

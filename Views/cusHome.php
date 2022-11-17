@@ -4,6 +4,7 @@
 <?php
 
   session_start();
+  include_once "header_cus.php";
 
   if(!isset($_COOKIE['status'])){
     header('location: login.php?err=invalid_request');
@@ -15,52 +16,11 @@
 <html>
   <head>
     <title>Customer Home</title>
-    <link rel="stylesheet" href="style.css" />
-
-        <!-- Header File -->
-        <?php include "header_cus.php" ?>
-        
+    <link rel="stylesheet" href="../assets/style.css" />
   </head>
 
   <body>
     <form action="viewFare.php" method="post" enctype="multipart/form-data">
-      <!--
-    <table
-      border="2"
-      align="center"
-      width="1080px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
-    >
-    <tr>
-      <td>
-          <nav style="margin: 10px 10px; display: block; float: left">
-
-            <h1>Train Station System</h1>
-            <h5>A Complete Application for Railway Train System</h5>
-          </nav>
-          <img
-            src="img/train-station.png"
-            alt="Company Logo"
-            width="70px" height="70px"
-            style="margin: 30px 20px; 
-            float:right"
-          />
-      </td>
-    </tr>
-      <tr>
-        <td>
-          <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters_cus.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
-            <a href="logout.php">Logout</a>
-          </nav>
-        </td>
-      </tr> -->
-    <!-- Top Bars (end) -->
-
       <tr>
         <td style="padding-bottom: 100px">
           <h2 style="margin: 30px 65px">Welcome Home</h2>
@@ -78,13 +38,13 @@
         <table style="margin: 40px">
           <tr>
             <td>
-            <img src="img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
+            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
             </td>
             <td>
-            <img src="img/album/train_2.jpg" alt="image_2" width="260px" height="180px">
+            <img src="../assets/img/album/train_2.jpg" alt="image_2" width="260px" height="180px">
             </td>
             <td>
-            <img src="img/album/train_3.jpg" alt="image_3" width="260px" height="180px">
+            <img src="../assets/img/album/train_3.jpg" alt="image_3" width="260px" height="180px">
             </td>
           </tr>
           <tr>
@@ -111,13 +71,13 @@
           </tr>
           <tr>
             <td>
-            <img src="img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
+            <img src="../assets/img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
             </td>
             <td>
-            <img src="img/icons/select.png" alt="select_icon" width="190px" height="190px" style="margin-right: 50px;">
+            <img src="../assets/img/icons/select.png" alt="select_icon" width="190px" height="190px" style="margin-right: 50px;">
             </td>
             <td>
-            <img src="img/icons/receipt.png" alt="receipt_icon" width="190px" height="190px" style="margin-right: 50px;">
+            <img src="../assets/img/icons/receipt.png" alt="receipt_icon" width="190px" height="190px" style="margin-right: 50px;">
             </td>
           </tr>
           

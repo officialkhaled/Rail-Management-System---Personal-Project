@@ -1,13 +1,12 @@
-<!--  -->
+<!-- Customer UI -->
 
 <html>
   <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Customer - Edit Profile</title>
+    <link rel="stylesheet" href="../assets/style.css">
 
   </head>
   <body>
-
     <table
     border="2"
       align="center"
@@ -17,12 +16,11 @@
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
-
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
           <img
-            src="img/train-station.png"
+            src="../assets/img/train-station.png"
             alt="Company Logo"
             width="70px" height="70px"
             style="margin: 30px 20px; 
@@ -62,13 +60,13 @@
         <td style="padding: 80px">
         <fieldset>
         <legend>PROFILE</legend>
-        <form action="regCheck.php" method="post" enctype="multipart/form-data">
+        <form action="../controllers/regCheck.php" method="post" enctype="multipart/form-data">
             <table align="center">
                 <tr>
                     <td>Name </td>
                     <td> : </td>
                     <td> Khaled Hossain</td>
-                    <td rowspan="5"><img src="img/profile-user.png" alt="profile picture" width="70px" height="70px"><a href="profilePicture.php"><br>Change</a></td>
+                    <td rowspan="5"><img src="../assets/img/profile-user.png" alt="profile picture" width="70px" height="70px"><a href="profilePicture.php"><br>Change</a></td>
                 </tr>
                 <tr>
                     <td>Email </td>

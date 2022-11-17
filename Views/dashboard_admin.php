@@ -1,11 +1,15 @@
 <!-- Admin -->
+<?php
+
+?>
 
 <html>
   <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
+    <form action="" method="post" enctype="multipart/form-data">
     <table
       border="2"
       align="center"
@@ -50,7 +54,7 @@
           <ul style="margin-left: 20px; margin-top: 20px">
             <li><a href="viewStation.php">View Station</a></li>
             <li><a href="editStation.php">Edit Station</a></li>
-            <li><a href="reviewFeedback.php">Review Feedback</a></li>
+            <li><a href="../controllers/reviewFeedback.php">Review Feedback</a></li>
             <li><a href="viewApplicants.php">View Applicants</a></li>
           </ul>
         </td>
@@ -67,5 +71,6 @@
         </td>
       </tr>
     </table>
+    </form>
   </body>
 </html>

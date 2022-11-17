@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <form action="loginCheck.php" method="post" enctype="multipart/form-data">
+    <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
       <!--
     <table
       border="2"
@@ -74,13 +74,13 @@
         <table style="margin: 40px">
           <tr>
             <td>
-            <img src="img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
+            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
             </td>
             <td>
-            <img src="img/album/train_2.jpg" alt="image_2" width="260px" height="180px">
+            <img src="../assets/img/album/train_2.jpg" alt="image_2" width="260px" height="180px">
             </td>
             <td>
-            <img src="img/album/train_3.jpg" alt="image_3" width="260px" height="180px">
+            <img src="../assets/img/album/train_3.jpg" alt="image_3" width="260px" height="180px">
             </td>
           </tr>
           <tr>
@@ -106,13 +106,13 @@
           </tr>
           <tr>
             <td>
-            <img src="img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
+            <img src="../assets/img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
             </td>
             <td>
-            <img src="img/icons/select.png" alt="select_icon" width="190px" height="190px" style="margin-right: 50px;">
+            <img src="../assets/img/icons/select.png" alt="select_icon" width="190px" height="190px" style="margin-right: 50px;">
             </td>
             <td>
-            <img src="img/icons/receipt.png" alt="receipt_icon" width="190px" height="190px" style="margin-right: 50px;">
+            <img src="../assets/img/icons/receipt.png" alt="receipt_icon" width="190px" height="190px" style="margin-right: 50px;">
             </td>
           </tr>
           
@@ -143,8 +143,7 @@
         </td>
       </tr>
 
-      <!-- Footer File <?php //include "footer.php" ?> -->
-      
+
       <tr align="center">
         <td>
           <nav>
@@ -157,6 +156,5 @@
       </tr>
 
     </form>
-    
   </body>
 </html>

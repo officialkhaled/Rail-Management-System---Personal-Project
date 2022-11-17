@@ -1,51 +1,16 @@
+<?php 
+
+  include_once "../assets/header_cus.php" 
+
+?>
+
 <html>
   <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-
-        <!-- Header File -->
-        <?php include "header_cus.php" ?>
-        
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
-    <!--
-    <table
-    border="2"
-      align="center"
-      width="1080px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
-    >
-
-    <tr>
-      <td colspan="2">
-          <nav style="margin: 10px 10px; display: block; float: left">
-
-            <h1>Train Station System</h1>
-            <h5>A Complete Application for Railway Train System</h5>
-          </nav>
-          <img
-            src="img/train-station.png"
-            alt="Company Logo"
-            width="70px" height="70px"
-            style="margin: 30px 20px; 
-            float:right"
-          />
-      </td>
-    </tr>
-      <tr>
-        <td colspan="2">
-          <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters_cus.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
-            <a href="logout.php">Logout</a>
-          </nav>
-        </td>
-      </tr> -->
-    <!-- Top Bars (end) -->
-
+    <form action="" method="post" enctype="multipart/form-data">
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
@@ -74,5 +39,6 @@
         </td>
       </tr>
     </table>
+    </form>
   </body>
 </html>

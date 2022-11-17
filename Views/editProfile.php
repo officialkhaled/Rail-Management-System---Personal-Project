@@ -1,27 +1,24 @@
 <html>
   <head>
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="../assets/style.css">
   </head>
-  <body>
 
+  <body>
     <table
     border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
-
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
-
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
           <img
-            src="img/train-station.png"
+            src="../assets/img/train-station.png"
             alt="Company Logo"
             width="70px" height="70px"
             style="margin: 30px 20px; 
@@ -61,7 +58,7 @@
         <td style="padding: 80px">
           <fieldset>
           <legend>EDIT PROFILE</legend>
-            <form action="regCheck.php" method="post" enctype="multipart/form-data">
+            <form action="../controllers/regCheck.php" method="post" enctype="multipart/form-data">
               <table align="center">
                 <tr>
                     <td>Name</td>
@@ -94,7 +91,6 @@
             </form>
           </fieldset>
         </td>
-
       </tr>
 
       <tr align="center">
