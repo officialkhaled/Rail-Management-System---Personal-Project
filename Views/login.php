@@ -58,12 +58,12 @@
                             <tr>
                                 <td>Username </td>
                                 <td>:</td>
-                                <td><input type="text" name="username" value="" required></td>
+                                <td><input type="text" name="username" value="" ></td>
                             </tr>
                             <tr>
                                 <td>Password </td>
                                 <td>:</td>
-                                <td><input type="password" name="password" value="" required></td>
+                                <td><input type="password" name="password" value="" ></td>
                             </tr>
                             <tr>
                               <td colspan="3">
@@ -92,9 +92,9 @@
     <tr align="center">
         <td>
             <nav>
-                <a href="t&c.html">Terms & Conditions</a> |
-                <a href="privacyPolicy.html">Privacy Policy</a> |
-                <a href="aboutUs.html">About Us</a>
+                <a href="t&c.php">Terms & Conditions</a> |
+                <a href="privacyPolicy.php">Privacy Policy</a> |
+                <a href="aboutUs.php">About Us</a>
             </nav>
             <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>

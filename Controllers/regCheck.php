@@ -7,12 +7,11 @@
     $email = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $conPass = $_POST['password'];
     //$usertype = $_POST['usertype'];
     $gender = $_POST['gender'];
     $dob = $_POST['dob'];
 
-    if($name == "" || $email == "" || $username == "" || $password == "" || $conPass == "" || $gender == "" || $dob == "") {
+    if($name == "" || $email == "" || $username == "" || $password == "" || $gender == "" || $dob == "") {
         header('location: ../views/register.php?err=null');
     } 
     else{

@@ -7,7 +7,7 @@
 <html>
   <head>
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <table

@@ -88,11 +88,7 @@
                   <td>:</td>
                   <td><input type="password" name="password" value="" /></td>
                 </tr>
-                <tr>
-                  <td>Confirm Password</td>
-                  <td>:</td>
-                  <td><input type="password" name="conPass" /></td>
-                </tr>
+
                 <!--
                 <tr>
                   <td>Usertype</td>

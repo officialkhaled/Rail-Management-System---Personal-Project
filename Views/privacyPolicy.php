@@ -7,13 +7,13 @@
 <html>
   <head>
     <title>Privacy Policy</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <table
       border="2"
       align="center"
-      width="860px"
+      width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px"
     >
       <!-- Top Bars (start) -->

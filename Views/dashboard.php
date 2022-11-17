@@ -1,10 +1,13 @@
+<?php 
+
+  include_once "../assets/header.php" 
+
+?>
+
 <html>
   <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-
-        <!-- Header File -->
-        <?php include "header.php" ?>
+    <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
     <!--
