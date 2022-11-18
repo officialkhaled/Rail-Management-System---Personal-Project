@@ -29,11 +29,10 @@
       <tr>
         <td colspan="2">
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters_cus.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
+          <a href="adminHome.php">Home</a> |
+            <a href="dashboard_admin.php">Dashboard</a> |
+            <a href="viewStation.php">Station</a> |
+            <a href="viewApplicants.php">Applicants</a> |
             <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
@@ -47,12 +46,14 @@
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="viewProfile.php">View Profile</a></li>
-            <li><a href="editProfile.php">Edit Profile</a></li>
-            <li><a href="viewAlbum.php">View Album</a></li>
-            <li><a href="profilePicture.php">Change Profile Picture</a></li>
-            <li><a href="changePass.php">Change Password</a></li>
-            <li><a href="viewTicketCart.php">View Ticket Cart</a></li>
+          <li><a href="viewProfile_admin.php">View Profile</a></li>
+            <li><a href="editProfile_admin.php">Edit Profile</a></li>
+            <li><a href="profilePicture_admin.php">Change Profile Picture</a></li>
+            <li><a href="changePass_admin.php">Change Password</a></li>
+            <li><a href="viewStation.php">View Station</a></li>
+            <li><a href="editStation.php">Edit Station</a></li>
+            <li><a href="../controllers/reviewFeedback.php">Review Feedback</a></li>
+            <li><a href="viewApplicants.php">View Applicants</a></li>
           </ul>
         </td>
         <td style="padding: 80px">

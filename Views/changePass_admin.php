@@ -1,21 +1,22 @@
-<!-- Customer UI -->
-
 <html>
   <head>
-    <title>Customer - Edit Profile</title>
+    <title>Change Password</title>
     <link rel="stylesheet" href="../assets/style.css">
 
   </head>
   <body>
+
     <table
     border="2"
       align="center"
       width="1080px"
       style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
     >
+
     <tr>
       <td colspan="2">
           <nav style="margin: 10px 10px; display: block; float: left">
+            
             <h1>Train Station System</h1>
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
@@ -38,13 +39,13 @@
             <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
-      </tr> 
+      </tr>
     <!-- Top Bars (end) -->
 
       <tr>
         <td style="padding-bottom: 100px">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          View Profile
+          Change Password
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
@@ -60,35 +61,32 @@
         </td>
         <td style="padding: 80px">
         <fieldset>
-        <legend>PROFILE</legend>
-        <form action="../controllers/regCheck.php" method="post" enctype="multipart/form-data">
-            <table align="center">
-                <tr>
-                    <td>Name </td>
-                    <td> : </td>
-                    <td> Khaled Hossain</td>
-                    <td rowspan="5"><img src="../assets/img/profile-user.png" alt="profile picture" width="70px" height="70px"><a href="profilePicture.php"><br>Change</a></td>
-                </tr>
-                <tr>
-                    <td>Email </td>
-                    <td> : </td>
-                    <td> khaled@aiub.edu</td>
-                </tr>
-                <tr>
-                    <td>Gender </td>
-                    <td> : </td>
-                    <td> Male</td>
-                </tr>
-                <tr>
-                    <td>Date of Birth </td>
-                    <td> : </td>
-                    <td> 2020-07-02</td>
-                </tr>
-                <tr>
-                    <td><a href="editProfile.php">Edit Profile</a></td>
-                </tr>
-            </table>
-        </form>
+      <legend>CHANGE PASSWORD</legend>
+      <table>
+        <tr>
+          <td>Current Password </td>
+          <td>:</td>
+          <td><input type="password" name="currentPass" value=""></td>
+        </tr>
+        <tr>
+          <td style="color: green;">New Password </td>
+          <td>:</td>
+          <td><input type="password" name="newPass" value=""></td>
+        </tr>
+        <tr>
+          <td style="color: red;">Retype New Password </td>
+          <td>:</td>
+          <td><input type="password" name="retypedPass" value=""></td>
+        </tr>
+      </table>
+      <hr>
+      <table>
+        <tr>
+          <td>
+          <td><input type="submit" name="btn" value="Submit"></td>
+          </td>
+        </tr>
+      </table>
     </fieldset>
   </td>
       </tr>

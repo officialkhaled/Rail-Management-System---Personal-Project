@@ -24,7 +24,7 @@
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
           <img
-            src="img/train-station.png"
+            src="../assets/img/train-station.png"
             alt="Company Logo"
             width="70px" height="70px"
             style="margin: 30px 20px; 

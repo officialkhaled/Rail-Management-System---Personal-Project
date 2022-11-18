@@ -15,7 +15,7 @@
 <html>
   <head>
     <title>Admin Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
 
     <!-- Header File -->
     <?php include "../assets/header_admin.php" ?>
