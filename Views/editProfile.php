@@ -34,7 +34,7 @@
             <a href="deals&offers.php">Deals/Offers</a> |
             <a href="counters_cus.php">Counters</a> |
             <a href="feedback.php">Feedback</a> |
-            <a href="logout.php">Logout</a>
+            <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
       </tr> 

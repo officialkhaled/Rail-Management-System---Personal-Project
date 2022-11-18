@@ -24,42 +24,7 @@
 
   <body>
     <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
-      <!--
-    <table
-      border="2"
-      align="center"
-      width="1080px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
-    >
-
-    <tr>
-      <td>
-          <nav style="margin: 10px 10px; display: block; float: left">
-            <h1>Train Station System</h1>
-            <h5>A Complete Application for Railway Train System</h5>
-          </nav>
-          <img
-            src="img/train-station.png"
-            alt="Company Logo"
-            width="70px" height="70px"
-            style="margin: 30px 20px; 
-            float:right"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="adminHome.php">Home</a> |
-            <a href="dashboard_admin.php">Dashboard</a> |
-            <a href="viewStation.php">Station</a> |
-            <a href="viewApplicants.php">Applicants</a> |
-            <a href="logout.php">Logout</a>
-          </nav>
-        </td>
-      </tr> -->
-    <!-- Top Bars (end) -->
-
+      
       <tr>
         <td style="padding-bottom: 100px">
           <h2 style="margin: 30px 65px">Welcome Home</h2>
@@ -138,7 +103,6 @@
           <a href="faq_cus.php">FAQ</a>
           </nav>
           </tr>
-          
         </table>
         </td>
       </tr>

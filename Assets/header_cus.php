@@ -17,7 +17,7 @@
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
           <img
-            src="img/train-station.png"
+            src="../assets/img/train-station.png"
             alt="Company Logo"
             width="70px" height="70px"
             style="margin: 30px 20px; 
@@ -28,12 +28,12 @@
       <tr>
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="cusHome.php">Home</a> |
-            <a href="dashboard_cus.php">Dashboard</a> |
-            <a href="deals&offers.php">Deals/Offers</a> |
-            <a href="counters.php">Counters</a> |
-            <a href="feedback.php">Feedback</a> |
-            <a href="logout.php">Logout</a>
+            <a href="../views/cusHome.php">Home</a> |
+            <a href="../views/dashboard_cus.php">Dashboard</a> |
+            <a href="../views/eals&offers.php">Deals/Offers</a> |
+            <a href="../views/counters.php">Counters</a> |
+            <a href="../views/feedback.php">Feedback</a> |
+            <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
       </tr>

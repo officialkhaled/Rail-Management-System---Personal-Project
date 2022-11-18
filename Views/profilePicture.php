@@ -72,7 +72,7 @@
             <table>
                 <tr>
                     <td>          
-                        <td><input type="submit" name="" id="Submit"></td>
+                        <td><input type="submit" name="upload" id="Submit"></td>
                     </td>
                 </tr>
             </table>
