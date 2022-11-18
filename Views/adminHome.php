@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Header File -->
-    <?php include "header_admin.php" ?>
+    <?php include "../assets/header_admin.php" ?>
 
   </head>
 

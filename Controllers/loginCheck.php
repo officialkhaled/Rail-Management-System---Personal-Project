@@ -16,20 +16,53 @@
         header('location: ../views/login.php?err=null');
     }else if($status){
         $_SESSION['status'] = "true";
-        
-        if($usertype = "admin"){
+        setcookie('status', 'true', time() + 3000, '/');
+        if($user['usertype'] == 'admin'){
             header('location: ../views/adminHome.php');
-        } else if($usertype = "employee"){
+        } else if($user['usertype'] == 'employee'){
             header('location: ../views/empHome.php');
-        } else if($usertype = "customer"){
+        } else if($user['usertype'] == 'customer'){
             header('location: ../views/cusHome.php');
         }
         
     }else{
-        alertMessage("Invalid User!");
+        alertMessage("Invalid User! Please go back and input correct information");
+        echo "<center><a href=\"../views/login.php\" \"><h1>Go Back</h1></a></center>";
     }
 
     /*
+
+
+  //Login using file (.txt)
+
+    if ($username == "" || $password == "" || $usertype == "") {
+    header('location: login.php?err=null');
+    } else {
+        $myUser = fopen('users.txt', "r");
+        while (!feof($myUser)) {
+            $data = fgets($myUser);
+            $user = explode(" | ", $data);
+            if ($user[0] == $username && $user[1] == $password && $user[2] == $usertype) {
+                setcookie('status', 'true', time() + 3000, '/');
+                if($usertype == 'admin') {
+                    header('location: adminHome.php');
+                } else if($usertype == 'employee') {
+                    header('location: empHome.php');
+                } else if($usertype == 'customer') {
+                    header('location: cusHome.php');
+            }
+        }
+    }
+    echo "<h2> 
+    Invalid User <br>
+    Please provide correct login information
+    </h2>";
+
+    }
+
+
+
+
     if($user['username'] == "") {
         echo '<script>alert("Username is missing!")</script>';
     } else if($user['password']  == "") {
@@ -108,33 +141,7 @@ else if($status){
         echo "invalid user";
     }
 
-    //Login using file (.txt)
-
-    if ($username == "" || $password == "" || $usertype == "") {
-    header('location: login.php?err=null');
-    } else {
-        $myUser = fopen('users.txt', "r");
-        while (!feof($myUser)) {
-            $data = fgets($myUser);
-            $user = explode(" | ", $data);
-            if ($user[0] == $username && $user[1] == $password && $user[2] == $usertype) {
-                setcookie('status', 'true', time() + 3000, '/');
-                if($usertype == 'admin') {
-                    header('location: adminHome.php');
-                } else if($usertype == 'employee') {
-                    header('location: empHome.php');
-                } else if($usertype == 'customer') {
-                    header('location: cusHome.php');
-            }
-        }
-    }
-    echo "<h2> 
-    Invalid User <br>
-    Please provide correct login information
-    </h2>";
-
-    }
-
+  
 */
 
 ?>

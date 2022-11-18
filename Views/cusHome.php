@@ -6,7 +6,7 @@
   session_start();
   include_once "../assets/header_cus.php";
 
-  if(!isset($_SESSION['status'])){
+  if(!isset($_COOKIE['status'])){
     header('location: login.php?err=invalid_request');
   }
 

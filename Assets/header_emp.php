@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <header>
   <table
@@ -18,7 +18,7 @@
             <h5>A Complete Application for Railway Train System</h5>
           </nav>
           <img
-            src="img/train-station.png"
+            src="./assets/img/train-station.png"
             alt="Company Logo"
             width="70px" height="70px"
             style="margin: 30px 20px; 
@@ -33,7 +33,7 @@
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
             <a href="viewApplicants.php">Applicants</a> |
-            <a href="logout.php">Logout</a>
+            <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
       </tr>
