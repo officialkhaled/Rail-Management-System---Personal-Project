@@ -39,7 +39,7 @@
             <a href="dashboard_admin.php">Dashboard</a> |
             <a href="viewStation.php">Station</a> |
             <a href="viewApplicants.php">Applicants</a> |
-            <a href="logout.php">Logout</a>
+            <a href="../controllers/logout.php">Logout</a>
           </nav>
         </td>
       </tr>
@@ -52,6 +52,9 @@
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
+          <li><a href="viewProfile_admin.php">View Profile</a></li>
+            <li><a href="editProfile_admin.php">Edit Profile</a></li>
+            <li><a href="profilePicture_admin.php">Change Profile Picture</a></li>
             <li><a href="viewStation.php">View Station</a></li>
             <li><a href="editStation.php">Edit Station</a></li>
             <li><a href="../controllers/reviewFeedback.php">Review Feedback</a></li>
