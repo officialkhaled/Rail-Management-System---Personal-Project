@@ -16,7 +16,15 @@
         header('location: ../views/login.php?err=null');
     }else if($status){
         $_SESSION['status'] = "true";
-        header('location: ../views/cusHome.php');
+        
+        if($usertype = "admin"){
+            header('location: ../views/adminHome.php');
+        } else if($usertype = "employee"){
+            header('location: ../views/empHome.php');
+        } else if($usertype = "customer"){
+            header('location: ../views/cusHome.php');
+        }
+        
     }else{
         alertMessage("Invalid User!");
     }

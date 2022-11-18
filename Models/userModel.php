@@ -21,7 +21,7 @@
   function insertUser($user){
     $con = getConnection();
 
-    $sql = "INSERT INTO users VALUES('', '{$user['name']}', '{$user['email']}', '{$user['username']}', '{$user['password']}', '{$user['gender']}', '{$user['dob']}')";
+    $sql = "INSERT INTO users VALUES('', '{$user['name']}', '{$user['email']}', '{$user['username']}', '{$user['password']}', 'customer', '{$user['gender']}', '{$user['dob']}', '')";
 
     $status = mysqli_query($con, $sql);
     return $status;
