@@ -30,7 +30,7 @@
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="adminHome.php">Home</a> |
-            <a href="dashboard_admin.php">Dashboard</a> |
+            <a href="menu_admin.php">Menu</a> |
             <a href="viewStation.php">Station</a> |
             <a href="viewApplicants.php">Applicants</a> |
             <a href="../controllers/logout.php">Logout</a>

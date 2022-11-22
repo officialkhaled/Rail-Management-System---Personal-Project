@@ -6,7 +6,7 @@
 
 <html>
   <head>
-    <title>Customer Dashboard</title>
+    <title>Customer Menu</title>
     <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
@@ -14,7 +14,7 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Dashboard
+          Menu
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">

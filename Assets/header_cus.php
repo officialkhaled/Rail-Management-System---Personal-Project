@@ -29,7 +29,7 @@
         <td>
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="../views/cusHome.php">Home</a> |
-            <a href="../views/dashboard_cus.php">Dashboard</a> |
+            <a href="../views/menu_cus.php">Menu</a> |
             <a href="../views/eals&offers.php">Deals/Offers</a> |
             <a href="../views/counters.php">Counters</a> |
             <a href="../views/feedback.php">Feedback</a> |

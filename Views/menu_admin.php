@@ -5,7 +5,7 @@
 
 <html>
   <head>
-    <title>Admin Dashboard</title>
+    <title>Admin Menu</title>
     <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
@@ -36,7 +36,7 @@
         <td colspan="2">
           <nav style="margin: 30px 20px; display: block; float: right">
             <a href="adminHome.php">Home</a> |
-            <a href="dashboard_admin.php">Dashboard</a> |
+            <a href="menu_admin.php">Menu</a> |
             <a href="viewStation.php">Station</a> |
             <a href="viewApplicants.php">Applicants</a> |
             <a href="../controllers/logout.php">Logout</a>
@@ -48,7 +48,7 @@
       <tr>
         <td style="padding-bottom: 100px; ">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Dashboard
+          Menu
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">

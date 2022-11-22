@@ -6,18 +6,18 @@
 
 <html>
   <head>
-    <title>Employee Dashboard</title>
+    <title>Employee Menu</title>
     <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
       <tr>
         <td style="padding-bottom: 100px">
           <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          Album
+          Menu
           </h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="menu_emp.php">Dashboard</a></li>
             <li><a href="album.php">View Album</a></li>
             <li><a href="editAlbum.php">Edit Album</a></li>
             <li><a href="editAlbum.php">Edit Album</a></li>
