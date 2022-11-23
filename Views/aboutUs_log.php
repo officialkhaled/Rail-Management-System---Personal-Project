@@ -3,10 +3,10 @@
 <html>
   <head>
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="../assets/style.css" />
+    
     <!-- Header File -->
-    <?php include "header_cus.php" ?>
+    <?php include "../assets/header_cus.php" ?>
   </head>
   <body>
     <!-- 
