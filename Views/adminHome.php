@@ -6,7 +6,7 @@
   session_start();
 
   if(!isset($_COOKIE['status'])){
-    header('location: login.php?err=invalid_request');
+    header('location: ../controllers/login.php?err=invalid_request');
   }
 
 ?>
