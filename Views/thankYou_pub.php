@@ -4,9 +4,9 @@
 <html>
   <head>
     <title>Contact us</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
     <!-- Header File -->
-    <?php include "header.php" ?>
+    <?php include "../assets/header.php" ?>
   </head>
   <body>
     <!--
