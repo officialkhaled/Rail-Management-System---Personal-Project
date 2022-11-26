@@ -1,128 +1,94 @@
-<!-- Public UI -->
-<?php 
 
-//  include_once "../assets/headerTest.php"; 
-//  include_once "../assets/footerTest.php";
-  include_once "../assets/index.php"; 
-
-?>
-
-<!-- HTML -->
 <html>
-  <head>
-    <title>Public Home</title>
-    <link rel="stylesheet" href="../assets/style.css" />
-    <link rel="stylesheet" href="../assets/styles.css" />
-    <!--
-    <link rel="stylesheet" href="../assets/headStyle.css" />
-    <link rel="stylesheet" href="../assets/footerStyle.css">
-    -->
-  </head>
-
-  <body class="background-image">
-    <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
-  </form>
-  </body>
+    <?php include __DIR__ ."/../common/header.php" ?>
 
 
-  <body >
-    <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
-    <table>
-      <tr>
-        <td style="padding-bottom: 100px">
-          <h2 style="margin: 30px 65px">Welcome Home</h2>
 
-          <p  style="margin: 30px 65px">
-          We are delighted to have you among us. On behalf of all the members and the management, we would like to extend our warmest welcome and good wishes! Trains are wonderful. To travel by train is to see nature and human beings, towns and churches, and rivers, in fact, to see life.”. Our goal is to make your life easier from traditional system. Kothin.com is a complete Rail project that can manage a whole system through online. Hopefully, you will have a great  experience through our system. <br> <br> <br> 
-        </p>
 
-        <h2 style="margin: 30px 65px; color: red;">Login to buy tickets!</h2>
+  <body>
+    <div class="container-main">
+        <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
 
-        <h2 style="margin: 30px 65px">Top Routes and Destinations</h2>
+            <div class="my-5">
+                <h1 class="my-1">
+                    Welcome Home
+                </h1>
+                <p class="my-5">
+                    We are delighted to have you among us. On behalf of all the members and the management, we would like to extend our warmest welcome and good wishes! Trains are wonderful. To travel by train is to see nature and human beings, towns and churches, and rivers, in fact, to see life.”. Our goal is to make your life easier from traditional system. Kothin.com is a complete Rail project that can manage a whole system through online. Hopefully, you will have a great experience through our system.
+                </p>
+            </div>
 
-        <nav style="margin: 60px">
-        <table style="margin: 40px">
-          <tr>
-            <td>
-            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
-            </td>
-            <td>
-            <img src="../assets/img/album/train_2.jpg" alt="image_2" width="260px" height="180px">
-            </td>
-            <td>
-            <img src="../assets/img/album/train_3.jpg" alt="image_3" width="260px" height="180px">
-            </td>
-          </tr>
-          <tr>
-            <td>Rajdhani Express</td>
-            <td>Satabdi Express</td>
-            <td>Tejas Express</td>
-          </tr>
-          <tr>
-            <td><strong>Dhaka to Kamalapur</strong></td>
-            <td><strong>Chittagong to Sylhet</strong></td>
-            <td><strong>Noakhali to Dhaka</strong></td>
-          </tr>
-        </table>
-        <br>  
-        <h2 style="margin: 30px">Train Station Management System</h2>
+            <div>
+                <h2 class="my-2">
+                    Login to buy ticket
+                </h2>
+                <div class="my-5">
+                    <h3 class="my-2 mx-5">
+                        Top Routes and Destinations
+                    </h3>
+                </div>
 
-        <nav style="margin: 30px">
-        <table style="margin: 30px">
-        <tr>
-            <td><h4>Search</h4></td>
-            <td><h4>Select</h4></td>
-            <td><h4>Checkout</h4></td>
-          </tr>
-          <tr>
-            <td>
-            <img src="../assets/img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
-            </td>
-            <td>
-            <img src="../assets/img/icons/select.png" alt="select_icon" width="190px" height="190px" style="margin-right: 50px;">
-            </td>
-            <td>
-            <img src="../assets/img/icons/receipt.png" alt="receipt_icon" width="190px" height="190px" style="margin-right: 50px;">
-            </td>
-          </tr>
-          
-          <tr>
-            <td>
-              <p style="margin-top: 15px">Choose your origin, destination, journey dates and search for trains</p>
-            </td>
-            <td>
-              <p>Select your desired trip and choose the class</p>
-            </td>
-            <td>
-              <p>Receive your E-receipt and save it</p>
-            </td>
-          </tr>
-        </table>
-        <br>
-        <table align="center">
-          <tr>
-          
-          <a href="refundPolicy.php">Refund Policy</a> |
-          <a href="facilities.php">Facilities</a> |
-          <a href="faq.php">FAQ</a>
-          
-          </tr>
-        </table>
-        </td>
-      </tr>
-      <!--
-      <tr align="center">
-        <td>
-          <nav>
-          <a href="t&c.php">Terms & Conditions</a> |
-            <a href="privacyPolicy.php">Privacy Policy</a> |
-            <a href="aboutUs.php">About Us</a>
-          </nav>
-          <footer style="margin: 10px">Copyright &copy; 2022</footer>
-        </td>
-      </tr>
-      -->
-    </table>
-    </form>
+                <div class="mx-5 my-5">
+
+
+                    <div class="grid my-2">
+                        <div>
+                            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
+                            <p class="my-2">
+                                Dhaka to Chittagong
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
+                            <p class="my-2">
+                                Dhaka to Chittagong
+                            </p>
+                        </div>
+
+                        <div>
+                            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
+                            <p class="my-2">
+                                Dhaka to Chittagong
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="my-5">
+                <h2 class="my-2">
+                    Train Station Management System
+                </h2>
+
+                <div class="mx-5 my-5">
+
+
+                    <div class="grid my-2">
+                        <div>
+                            <p class="my-2">
+                                Dhaka to Chittagong
+                            </p>
+                            <img src="../assets/img/icons/search.png" alt="search_icon" width="190px" height="190px" style="margin-right: 50px;">
+
+                        </div>
+
+                        <div>
+                            <p class="my-2">
+                                Dhaka to Chittagong
+                            </p>
+                            <img src="../assets/img/album/train_1.jpg" alt="image_1" width="260px" height="180px">
+                        </div>
+                    </div> <!-- grid -->
+                </div> <!-- mx-5 -->
+            </div>
+        </form>
+    </div>
+
+    <?php include __DIR__. "/../common/footer.php" ?>
   </body>
 </html>

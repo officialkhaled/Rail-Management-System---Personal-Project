@@ -5,22 +5,27 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.container {
-  height: 120px;
-  width: 100%;
-  background-color: #00539c;
-  background-size: cover;
-  background-position: center;
-}
 
+.main-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 nav {
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 83, 156, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .logo {
@@ -59,10 +64,6 @@ nav ul li a:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: #00539c;
   height: auto;
   width: 100vw;
@@ -70,67 +71,38 @@ footer {
   color: #fff;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.footer-content h3 {
+.footer-container h3 {
   font-size: 1.8rem;
   text-transform: capitalize;
   line-height: 3rem;
 }
 
-.footer-content p {
+.footer-container p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
-  font-size: 16px;
-}
-
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-  margin: 0 10px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.socials a:hover {
-  color: #ffd662;
-  transition: 0.4s ease;
-}
-
-.footer-bottom {
-  background: #003c70;
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-bottom p {
   font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
 }
 
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-  font-weight: 200;
+.footer-container .links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
 }
+
 
 button {
   border: none;
@@ -150,4 +122,92 @@ button:hover {
 
 .background-image {
   background: #000000;
+}
+
+
+.jumbotron {
+    background: #00539c;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.container-main {
+    max-width: 90%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+}
+
+.grid-item {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.mx-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.mx-5 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.mx-10 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.my-10 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
