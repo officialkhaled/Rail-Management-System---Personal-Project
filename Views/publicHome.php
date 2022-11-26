@@ -1,7 +1,8 @@
 <!-- Public UI -->
 <?php 
 
-  include_once "../assets/header.php" 
+  include_once "../assets/headerTest.php"; 
+  include_once "../assets/footerTest.php";
 
 ?>
 
@@ -10,11 +11,13 @@
   <head>
     <title>Public Home</title>
     <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/headStyle.css" />
+    <link rel="stylesheet" href="../assets/footerStyle.css">
   </head>
 
   <body>
     <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
-
+    <table>
       <tr>
         <td style="padding-bottom: 100px">
           <h2 style="margin: 30px 65px">Welcome Home</h2>
@@ -88,16 +91,16 @@
         <br>
         <table align="center">
           <tr>
-          <nav style="margin: 30px;">
+          
           <a href="refundPolicy.php">Refund Policy</a> |
           <a href="facilities.php">Facilities</a> |
           <a href="faq.php">FAQ</a>
-          </nav>
+          
           </tr>
         </table>
         </td>
       </tr>
-      
+      <!--
       <tr align="center">
         <td>
           <nav>
@@ -108,6 +111,7 @@
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
+      -->
     </table>
     </form>
   </body>

@@ -2,7 +2,8 @@
 <?php
 
   session_start();
-  include_once "../assets/header.php";
+  include_once "../assets/headerTest.php";
+  include_once "../assets/footerTest.php";
 
 ?>
 
@@ -11,9 +12,15 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/headStyle.css" />
+    <link rel="stylesheet" href="../assets/footerStyle.css" />
 </head>
 
 <body>
+    <table
+      align="center"
+      width="100%"
+      style="margin: 20px;">
         <tr>
             <td style="padding: 80px">
                 <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
@@ -53,7 +60,7 @@
                 </form>
               </td>
           </tr>
-
+    <!--
     <tr align="center">
         <td>
             <nav>
@@ -64,7 +71,7 @@
             <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
     </tr>
+    -->
     </table>
 </body>
-
 </html>

@@ -1,12 +1,8 @@
-/*
 * {
   padding: 0;
   margin: 0;
-}
-*/
-
-body {
-  background-color: rgb(255, 255, 255);
+  background: rgb(29, 29, 29);
+  color: #fff;
 }
 
 /* unvisited link */
@@ -17,12 +13,12 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: rgb(51, 13, 155);
+  color: #fff;
 }
 
 /* mouse over link */
 a:hover {
-  color: #ce3a00;
+  color: #ea1538;
 }
 
 /* selected link */

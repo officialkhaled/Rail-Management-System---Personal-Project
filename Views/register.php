@@ -13,7 +13,8 @@
         }
     }
     
-    include_once "../assets/header.php";
+    include_once "../assets/headerTest.php";
+    include_once "../assets/footerTest.php";
 ?>
 
 <!-- HTML -->
@@ -21,46 +22,14 @@
   <head>
     <title>Registration</title>
     <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/headStyle.css" />
+    <link rel="stylesheet" href="../assets/footerStyle.css" />
   </head>
   <body>
-    <!--
-    <table
-    border="2"
-      align="center"
-      width="1080px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
-    >
-     
-    <tr>
-      <td>
-          <nav style="margin: 10px 10px; display: block; float: left">
 
-            <h1>Train Station System</h1>
-            <h5>A Complete Application for Railway Train System</h5>
-          </nav>
-          <img
-            src="img/train-station.png"
-            alt="Company Logo"
-            width="70px" height="70px"
-            style="margin: 30px 20px; 
-            float:right"
-          />
-      </td>
-    </tr>
-      <tr>
-        <td>
-          <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="publicHome.php">Home</a> |
-            <a href="login.php">Login</a> |
-            <a href="register.php">Registration</a> |
-            <a href="deals&offers_pub.php">Deals/Offers</a> |
-            <a href="counters.php">Counters</a> |
-            <a href="contactUs.php">Contact Us</a>
-          </nav>
-        </td>
-      </tr> -->
-    <!-- Top Bars (end) -->
-
+    <table align="center"
+      width="100%"
+      style="margin: 20px">
       <tr>
         <td style="padding: 80px">
           <form action="../controllers/regCheck.php"  method="post" enctype="multipart/form-data">
@@ -88,6 +57,11 @@
                   <td>:</td>
                   <td><input type="password" name="password" value="" /></td>
                 </tr>
+                <tr>
+                  <td>Confirm Password</td>
+                  <td>:</td>
+                  <td><input type="password" name="password" value="" /></td>
+                </tr>
 
                 <!--
                 <tr>
@@ -100,6 +74,7 @@
                   </td>
                 </tr>
                 -->
+                
               </table>
               <hr />
               <table>
@@ -111,12 +86,6 @@
                     <input type="radio" name="gender" value="Other" /> Other
                   </fieldset>
                 </tr>
-                <tr>
-                  <fieldset>
-                    <legend>Date of Birth</legend>
-                    <input type="date" name="dob" value="" />
-                  </fieldset>
-                </tr>
               </table>
               <hr />
               <input type="submit" name="btn" id="Submit" />
@@ -125,7 +94,7 @@
           </form>
         </td>
       </tr>
-
+      <!--
       <tr align="center">
         <td>
           <nav>
@@ -136,6 +105,7 @@
           <footer style="margin: 10px">Copyright &copy; 2022</footer>
         </td>
       </tr>
+      -->
     </table>
   </body>
 </html>
