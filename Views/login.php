@@ -2,8 +2,9 @@
 <?php
 
   session_start();
-  include_once "../assets/headerTest.php";
-  include_once "../assets/footerTest.php";
+//  include_once "../assets/headerTest.php";
+// include_once "../assets/footerTest.php";
+  include_once "../assets/index.php"; 
 
 ?>
 
@@ -12,8 +13,11 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <!--
     <link rel="stylesheet" href="../assets/headStyle.css" />
     <link rel="stylesheet" href="../assets/footerStyle.css" />
+    -->
 </head>
 
 <body>
