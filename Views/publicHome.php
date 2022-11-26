@@ -19,7 +19,13 @@
     -->
   </head>
 
-  <body>
+  <body class="background-image">
+    <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
+  </form>
+  </body>
+
+
+  <body >
     <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
     <table>
       <tr>
