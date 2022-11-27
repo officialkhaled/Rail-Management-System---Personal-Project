@@ -35,10 +35,10 @@
         } else {
             echo '  <ul>
                         <li class="logbtn"><a href="../views/login.php">Profile</a></li>
-                        <li class="regbtn"><a href="../views/logout.php">Logout</a></li>
+                        <li class="regbtn"><a href="../controllers/logout.php">Logout</a></li>
                     </ul>';
         }
     ?>
     
-    <button type="button">Login</button>
+    <!--<button type="button">Login</button>-->
 </nav>

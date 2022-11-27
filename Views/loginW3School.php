@@ -1,12 +1,8 @@
-<?php
-
-?>
-
-
 <html>
+  <?php include __DIR__ ."/../common/header.php" ?>
+
 <head>
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -19,6 +15,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
+/*
 button {
   background-color: #04AA6D;
   color: white;
@@ -28,7 +25,7 @@ button {
   cursor: pointer;
   width: 100%;
 }
-
+*/
 button:hover {
   opacity: 0.8;
 }
@@ -128,11 +125,12 @@ span.psw {
 }
 </style>
 </head>
+
 <body>
 
-<h2>Modal Login Form</h2>
+<h2 class="main-content">Please login to continue</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="mx-10">Login</button>
 
 <div id="id01" class="modal">
   
@@ -174,5 +172,7 @@ window.onclick = function(event) {
 }
 </script>
 
-</body>
+    <?php include __DIR__. "/../common/footer.php" ?>
+  </body>
 </html>
+
