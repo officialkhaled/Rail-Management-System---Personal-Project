@@ -2,9 +2,6 @@
 <html>
     <?php include __DIR__ ."/../common/header.php" ?>
 
-
-
-
   <body>
     <div class="container-main">
         <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
@@ -53,11 +50,8 @@
                                 Dhaka to Chittagong
                             </p>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
             <div class="my-5">

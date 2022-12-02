@@ -129,7 +129,7 @@ nav {
   padding: 1rem 10rem;
   position: sticky;
   top: 0;
-  background-color: rgba(0, 83, 156, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
   backdrop-filter: blur(10px);
@@ -172,7 +172,7 @@ nav ul li a:hover {
 }
 
 footer {
-  background: #00539c;
+  background: #ffffff;
   height: auto;
   width: 100vw;
   padding-top: 40px;
@@ -232,7 +232,7 @@ button:hover {
 }
 
 .jumbotron {
-  background: #00539c;
+  background: #ffffff;
   color: #fff;
   padding: 20px;
   margin: 20px 0;

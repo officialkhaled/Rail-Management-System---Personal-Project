@@ -6,12 +6,12 @@
 
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $usertype = $_POST['usertype'];
+    $type = $_POST['usertype'];
 
     $user =['username'=>$username, 'password'=>$password, 'usertype'=>$usertype];
     $status = login($user);
 
-    if($username == "" || $password == "" || $usertype =="") {
+    if($username == "" || $password == "" || $type =="") {
         alertMessage("Invalid Username/Password!");
         header('location: ../views/login.php?err=null');
     }else if($status){
