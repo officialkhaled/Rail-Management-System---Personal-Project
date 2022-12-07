@@ -1,105 +1,122 @@
+
+<?php
+
+  include_once "../assets/header.php";
+	//include_once "../assets/footer.php";
+  //require_once "databaseCon.php";
+  include '../Models/databaseCon.php';
+
+	?>
+
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>View Station</title>
-    <link rel="stylesheet" href="style.css">
+		<!-- <link rel="stylesheet" href="../assets/style.css" /> -->
+		<link rel="stylesheet" href="../assets/headStyle.css" />
+    <link rel="stylesheet" href="../assets/footerStyle.css" />
+
+    <style>
+    .main{
+      background-color: Thistle;
+      width: 200px;
+      height: 40px;
+      margin: 0 auto;
+      text-align: center;
+      transition: width 2s linear 1s;
+
+    }
+    .main:hover{
+      width: 250px;
+    }
+
+    table{
+      border: 2px solid black;
+      border-collapse: collapse;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    th,td{
+      border: 2px solid black;
+      padding: 5px;
+
+    }
+    th{
+      background-color: PowderBlue;
+      color: black;
+      height: 30px;
+    }
+		</style>
+
   </head>
+
   <body>
-    <table
-    border="2"
-      align="center"
-      width="1080px"
-      style="border-collapse: collapse; margin-top: 30px; margin-bottom: 50px;"
-    >
-          <!-- Top Bars (start) -->
-    <tr>
-      <td colspan="2">
-          <nav style="margin: 10px 10px; display: block; float: left">
-            <!--<a href="contactUs_log.php">Contact Us</a>-->
-            <h1>Train Station System</h1>
-            <h5>A Complete Application for Railway Train System</h5>
-          </nav>
-          <img
-            src="img/train-station.png"
-            alt="Company Logo"
-            width="70px" height="70px"
-            style="margin: 30px 20px; 
-            float:right"
-          />
-      </td>
-    </tr>
-      <tr>
-        <td colspan="2">
-          <nav style="margin: 30px 20px; display: block; float: right">
-            <a href="adminHome.php">Home</a> |
-            <a href="dashboard_admin.php">Dashboard</a> |
-            <a href="viewStation.php">Station</a> |
-            <a href="viewApplicants.php">Applicants</a> |
-            <a href="logout.php">Logout</a>
-          </nav>
-        </td>
-      </tr>
-    <!-- Top Bars (end) -->
+  <div class ="main">
+  <h2> Station Details</h2>
+  </div>
+  <br><br>
+    <table>
+    
+  <tr>
+<th>Station ID</th>
+<th>City</th>
+<th>Address</th>
+<th>Hotline Number</th>
+  </tr>
 
-      <tr>
-        <td style="padding-bottom: 100px; ">
-          <h4 style="margin-top: 15px; margin-left: 15px; margin-bottom: 10px">
-          View Station
-          </h4>
-          <hr style="margin: 0 10px" />
-          <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="viewStation.php">View Station</a></li>
-            <li><a href="editStation.php">Edit Station</a></li>
-            <li><a href="reviewFeedback.php">Review Feedback</a></li>
-            <li><a href="viewApplicants.php">View Applicants</a></li>
-          </ul>
-        </td>
-        <td style="padding: 80px">
-          <fieldset>
-            <legend>VIEW STATIONS</legend>
-              <table>
-              <tr>
-                <nav style="margin: 20px;">
-                    <td><strong>City</strong></td>
-                    <td><strong>Address</strong></td>
-                    <td><strong>Contact</strong></td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Dhaka</td>
-                    <td>Airport Railway Station</td>
-                    <td>+880 17526 978456</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Chittagong</td>
-                    <td>Pahartali Railway Station</td>
-                    <td>+880 15348 987564</td>
-                </nav>
-              </tr>
-              <tr>
-                <nav>
-                    <td>Noakhali</td>
-                    <td>Sonaimuri Railway Station</td>
-                    <td>+880 19576 485342</td>
-                </nav>
-              </tr>
-              </table>
-          </fieldset>
-        </td>
-      </tr>
+  <?php
+                            
+                            $con = getConnection();
+                            $sql = "SELECT * FROM stations";
+                            $result = mysqli_query($con, $sql);
 
-      <tr align="center">
-        <td colspan="2">
-          <nav>
-            <a href="t&c_admin.php">Terms & Conditions</a> |
-            <a href="privacyPolicy_admin.php">Privacy Policy</a> |
-            <a href="aboutUs_admin.php">About Us</a>
-          </nav>
-          <footer style="margin: 10px">Copyright &copy; 2022</footer>
-        </td>
-      </tr>
-    </table>
-  </body>
+                            if(mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)) {
+                                    echo "<tr>";
+
+                                    echo "<td><center>{$row['station_id']}</center></td>";
+                                    echo "<td><center>{$row['city']}</center></td>";
+                                    echo "<td><center>{$row['address']}</center></td>";
+                                    echo "<td><center>{$row['hotline_number']}</center></td>";
+
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<td colspan=\"6\">No data found</td>";
+                            }
+
+
+                            ?>
+
+	</table>
+</form><br><br>
+
+</body>
 </html>
+
+<?php
+
+
+
+  /* search for name in database using php */
+  if(isset($_POST['search'])) {
+    $search = $_POST['search'];
+    $sql = "select * from user_data where username like '%$search%'";
+    $result = mysqli_query($con, $sql);
+
+    if(mysqli_num_rows($result) > 0) {
+      while($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>";
+        echo "<th><center>{$row['username']}</center></th>";
+        echo "<td><center>{$row['email']}</center></td>";
+        echo "</tr>";
+      }
+    } else {
+      echo "No results found";
+    }
+  }
+
+?>

@@ -4,23 +4,21 @@
   session_start();
 //  include_once "../assets/headerTest.php";
 // include_once "../assets/footerTest.php";
-  include_once "../assets/index.php"; 
 
 ?>
 
 <!-- HTML -->
 <html>
 <head>
+
     <title>Login</title>
     <link rel="stylesheet" href="../assets/style.css" />
     <link rel="stylesheet" href="../assets/styles.css" />
-    <!--
-    <link rel="stylesheet" href="../assets/headStyle.css" />
-    <link rel="stylesheet" href="../assets/footerStyle.css" />
-    -->
+
 </head>
 
 <body>
+
     <table
       align="center"
       width="100%"
@@ -41,13 +39,7 @@
                                 <td>:</td>
                                 <td><input type="password" name="password" value=""></td>
                             </tr>
-                            <tr>
-                              <td colspan="3">
-                                <input type="radio" name="usertype" value="admin"/> Admin
-                                <input type="radio" name="usertype" value="employee"/> Employee
-                                <input type="radio" name="usertype" value="customer"/> Customer
-                              </td>
-                            </tr>
+
                         </table>
                         <hr>
                         <table>
@@ -64,18 +56,40 @@
                 </form>
               </td>
           </tr>
-    <!--
-    <tr align="center">
-        <td>
-            <nav>
-                <a href="t&c.php">Terms & Conditions</a> |
-                <a href="privacyPolicy.php">Privacy Policy</a> |
-                <a href="aboutUs.php">About Us</a>
-            </nav>
-            <footer style="margin: 10px">Copyright &copy; 2022</footer>
-        </td>
-    </tr>
-    -->
+
     </table>
+
+    <script>
+      
+      // JavaScript Form Validation
+      function validateForm() {
+        let x = document.forms["myForm"]["username"].value;
+        let y = document.forms["myForm"]["password"].value;
+        
+        if (x == "") {
+          let msg = document.getElementsByClassName("msgUser")[0].innerHTML =
+            "Please provide your username!";
+          return false;
+        } else if (y == "") {
+          let msg = document.getElementsByClassName("msgPass")[0].innerHTML =
+            "Please provide your password!";
+          return false;
+        } else if (x == "" && y == "") {
+          let alertUser = document.getElementsByClassName("msgUser")[0].innerHTML =
+            "Please provide your username!";
+          let alertPass = document.getElementsByClassName("msgPass")[0].innerHTML =
+            "Please provide your password!";
+          return false;
+        } else if (x == $user[$username] && y == $user[$password]) {
+          alert("Login successful!");
+          return true;
+        } else {
+          alert("Login failed!");
+          return false;
+        }
+      }
+      
+    </script>
+
 </body>
 </html>
