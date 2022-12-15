@@ -1,8 +1,14 @@
-<!-- Admin navbar -->
-<div id="admin-navbar">
-  <a href="adminHome.php">Home</a>
-  <a href="menu_admin.php">Menu</a>
-  <a href="viewStation.php">Station</a>
-  <a href="viewApplicants.php">Applicants</a>
-  <a href="../controllers/logout.php">Logout</a>
-</div>
+
+<!-- Admin -->
+<nav>
+  <ul>
+    <!-- <li><input type="text" autocomplete="off" placeholder="Search user" name="search" id="search" value=""></li> -->
+    <!-- <li><input type="submit" name=searchBtn value="Search" id="searchBtn"></li> -->
+    <li><a href="../../views/admin/searchUserView.php">Search</a></li>
+    <li><a href="../../views/admin/adminHome.php">Home</a></li>
+    <li><a href="../../views/admin/menuAdmin.php">Menu</a></li>
+    <li><a href="#">Stations</a></li>
+    <li><a href="../../controllers/logout.php">Logout</a></li>
+  </ul>
+</nav>
+

@@ -1,45 +1,14 @@
 <?php
 
-  session_start();
-  require_once '../models/userModel.php';
-
-  if(!isset($_SESSION['status'])){
-    header('location: ../login.php');
-  }
-
-  $con = getConnection();
-  $sql = "SELECT * FROM user WHERE username='{$_SESSION['username']}'";
-  $result = mysqli_query($con, $sql);
-  $row = mysqli_fetch_assoc($result);
-
-  $name = $row['name'];
-  $username = $row['username'];
-  $password = $row['password'];
-
-  if(isset($_POST['update'])) {
-    $name = $_POST['name'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $sql = "UPDATE user SET name='$name', username='$username', password='$password' WHERE id='$id'";
-
-    $result = mysqli_query($con, $sql);
-
-    if($result) {
-      header('location: viewProfileAdmin.php');
-    } else {
-      echo "Error";
-    }
-  }
+  
 
 ?>
 
 <html>
 <head>
   
-  <title>Edit Profile | Customer</title>
+  <title>Change Password | Customer</title>
   <link rel="stylesheet" href="../assets/style/styleKhaled.css">
-  <script src="../assets/js/formValidate.js"></script>
 
   <style>
     :root {
@@ -169,6 +138,7 @@
 
   <div class="container">
     <!-- Customer UI -->
+    
     <table
       align="center"
       width="100%"
@@ -184,58 +154,53 @@
             <li><a href="viewProfile.php">View Profile</a></li>
             <li><a href="editProfile.php">Edit Profile</a></li>
             <li><a href="#">Change Profile Picture</a></li>
+            <li><a href="#">Change Password</a></li>
             <li><a href="#">View Album</a></li>
+            <li><a href="#">View Ticket Cart</a></li>
           </ul>
         </td>
-        <td class="right-section" style="padding: 80px">
-          <fieldset>
-            <legend> EDIT PROFILE </legend>
-            <form
-              action=""
-              method="post"
-              enctype="multipart/form-data" onkeyup="return validateProfileForm()" onsubmit="return validateProfileForm()"
-            >
-            <table class="table">
-                  <tr>
-                    <td><label for="name">Name</label></td>
-                    <td><input type="text" id="name" name="name" value=<?php echo $name ?>></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><center><span id="nameErr" class="err-text"></span></center></td>
-                  </tr>
+    
+        <td class="right-section" style="padding: 60px">
+        <td style="padding: 60px">
+        
+        <form method="post" action="changepasscheck.php" enctype="">
+			<fieldset style="width: 24%;">
+				<legend><b>Change Password</b></legend>
+        <br>
+				<table>
+					<tr>
+						<td>Current Password</td>
+						<tr></tr>
+						<td><input type="password" name="currPass" value="" ></td>
+					</tr>
+					<tr>
+          <td style="color: green;">New Password</td>
+						<tr></tr>
+						<td><input type="password" name="Password" value="" ></td>
+					</tr>
+                    <tr>
+                    <td style="color: red;">Retype New Password</td>
+						<tr></tr>
+						<td><input type="password" name="newPassword" value="" ></td>
+                    </tr>
+					<tr>
+						<td>
+							<input type="submit" name="" value="Submit">
+						</td>
+					</tr>
+				</table>
+				<?php
+					if(isset($_GET['err'])){
+						echo "invalid current password";
+						unset($_GET);
+					}
+				?>
+			</fieldset>
+		</form>
 
-                  <tr>
-                    <td><label for="username">Username</label></td>
-                    <td><input type="text" id="username" name="username" value=<?php echo $username ?>></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><center><span id="unameErr" class="err-text"></span></center></td>
-                  </tr>
-
-                  <label for="password">Password</label></td>
-                    <td><input type="password" id="password" name="password" value=<?php echo $password ?>></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><center><span id="passErr" class="err-text"></span></center></td>
-                  </tr>
-                  
-                  <tr>
-                    <td colspan="2">
-                      <div id="showPass-card">
-                        <input type="checkbox" id="showPass" onchange="return SHPassword(this);"><span id="showhidepwd">Show Password</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><center><button type="submit" name="update" class="update-btn">Update</button></center></td>
-                  </tr>
-                </table>
-            </form>
-          </fieldset>
-        </td>
-      </tr>
     </table>
   </div>
+  
 
   <div class="footer">
     <footer>Copyright &copy; 2022</footer>

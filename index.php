@@ -1,5 +1,5 @@
-<?php 
+<?php
 
-    header('location: views/publicHome.php');
+  header('location: views/publicHome.php');
 
 ?>

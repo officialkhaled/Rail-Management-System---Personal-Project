@@ -1,9 +1,9 @@
-<!-- Public Navbar -->
-<div id="public-navbar">
-  <a href="../views/publicHome.php">Home</a>
-  <a href="../views/login.php">Login</a>
-  <a href="../views/register.php">Registration</a>
-  <a href="../views/deals&offers_pub.php">Deals/Offers</a>
-  <a href="../views/counters.php">Counters</a>
-  <a href="../views/contactUs.php">Contact Us</a>
-</div>
+<!-- Public -->
+<nav>
+  <ul>
+    <li><a href="publicHome.php">Home</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="register.php">Register</a></li>
+  </ul>
+</nav>

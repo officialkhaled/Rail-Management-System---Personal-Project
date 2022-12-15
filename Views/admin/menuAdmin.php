@@ -1,26 +1,17 @@
 <?php
 
   session_start();
-  require_once '../models/userModel.php';
 
   if(!isset($_SESSION['status'])){
     header('location: ../login.php');
   }
 
-  $con = getConnection();
-  $sql = "SELECT * FROM user WHERE username='{$_SESSION['username']}'";
-
-  $result = mysqli_query($con, $sql);
-  $row = mysqli_fetch_assoc($result);
-
 ?>
 
 <html>
 <head>
-  
-  <title>View Profile | Customer</title>
-  <link rel="stylesheet" href="../assets/style/styleKhaled.css">
-
+  <title>Main Menu | Admin</title>
+  <link rel="stylesheet" href="../../assets/style/styleKhaled.css">
   <style>
     :root {
       --clr-bg: #e7eeef;
@@ -38,24 +29,6 @@
 
     body {
       background-color: var(--clr-bg);
-    }
-
-    .table {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    .table th, .table td {
-      padding: 14px;
-      text-align: left;
-    }
-
-    .table tr:hover {
-      background-color: #f5f5f5;
     }
 
     .heading {
@@ -157,69 +130,46 @@
       background: var(--clr-secondary);
       color: #fff;
     }
+
+    fieldset ul {
+      list-style-type: none;
+      padding: 20px;
+    }
+
+    fieldset ul li {
+      margin: 14px 0;
+      font-weight: bold;
+    }
     </style>
 </head>
 <body>
 
 <div class="wrap">
-  <div class="header"><?php include_once '../assets/common/header.php'; ?></div> 
-  <div class="nav"><?php include_once '../assets/common/customerNavbar.php'; ?></div>
+  <div class="header">
+    <div class="logo-img">
+      <img src="..\..\assets\img\logo.png" alt="logo">
+    </div>
+    <div class="title">
+      <center><h3 class="title">RailSheba</h3></center>
+    </div>
+  </div>  
+  <div class="nav"><?php include_once '../../assets/common/adminNavbar.php'; ?></div>
 
   <div class="container">
-    <!-- Customer UI -->
-    <table
-      align="center"
-      width="100%"
-      height="100%"
-      style="border-collapse: collapse"
-    >
+    <!-- Admin UI -->
+    <table align="center" width="100%" height="100%" style="border-collapse: collapse">
       <tr>
-        <td class="left-section" style="padding-bottom: 100px">
-          <h4 class="heading">View Profile</h4>
-          <hr style="margin: 0 10px" />
-          <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="menuCustomer.php">Main Menu</a></li>
-            <li><a href="viewProfile.php">View Profile</a></li>
-            <li><a href="editProfile.php">Edit Profile</a></li>
-            <li><a href="#">Change Profile Picture</a></li>
-            <li><a href="#">View Album</a></li>
-          </ul>
-        </td>
         <td class="right-section" style="padding: 80px">
           <fieldset>
-            <legend>PROFILE</legend>
-            <form
-              action=""
-              method="post"
-              enctype="multipart/form-data"
-            >
-            <table align="center" class="table">
-                <tr>
-                  <th>Name</th>
-                  <td><?php echo $row['name']; ?></td>
-                </tr>
-
-                <tr>
-                  <th>Username</th>
-                  <td><?php echo $row['username'] ?></td>
-                </tr>
-
-                <tr>
-                  <th>Password</th>
-                  <td><?php echo $row['password'] ?></td>
-                </tr>
-
-                <tr>
-                  <th>Profile Picture</th>
-                  <td><?php echo $row['img_data'] ?></td>
-                </tr>
-
-                <tr>
-                  <td colspan="2"><center><a href="editProfile.php?update=<?php echo $row['id']; ?>" id="update-btn">Update</a></center></td>
-                </tr>
-
-              </table>
-            </form>
+            <legend>MAIN MENU</legend>
+            <ul style="margin-left: 20px; margin-top: 20px">
+            <li><p style="color: rgb(255, 136, 0);">Choose your option</p><hr></li>
+            <li><a href="viewProfileAdmin.php">View Profile</a></li>
+            <li><a href="editProfileAdmin.php">Edit Profile</a></li>
+            <li><a href="#">Change Profile Picture</a></li>
+            <li><a href="#">Edit Album</a></li>
+            <li><a href="viewUsers.php">User List</a></li>
+          </ul>
           </fieldset>
         </td>
       </tr>

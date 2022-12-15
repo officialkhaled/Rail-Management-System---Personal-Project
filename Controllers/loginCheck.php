@@ -1,147 +1,66 @@
 <?php
 
-    session_start();
-    require_once "../models/userModel.php";
-    require_once "../assets/alertMsg.php";
+  session_start(); 
+  require_once "../models/userModel.php";
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $type = $_POST['usertype'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  $usertype = $_POST['usertype'];
 
-    $user =['username'=>$username, 'password'=>$password, 'usertype'=>$usertype];
-    $status = login($user);
+  $status = validateLogin($username, $password, $usertype);
 
-    if($username == "" || $password == "" || $type =="") {
-        alertMessage("Invalid Username/Password!");
-        header('location: ../views/login.php?err=null');
-    }else if($status){
-        $_SESSION['status'] = "true";
-        setcookie('status', 'true', time() + 3000, '/');
-        if($user['usertype'] == 'admin'){
-            header('location: ../views/adminHome.php');
-        } else if($user['usertype'] == 'employee'){
-            header('location: ../views/empHome.php');
-        } else if($user['usertype'] == 'customer'){
-            header('location: ../views/cusHome.php');
-        }
-        
-    }else{
-        alertMessage("Invalid User! Please go back and input correct information");
-        echo "<center><a href=\"../views/login.php\" \"><h1>Go Back</h1></a></center>";
-    }
+  if($status) {
+    $_SESSION['status'] = true;
+    $_SESSION['username'] = $username;
+    $_SESSION['usertype'] = $usertype;
 
-    /*
+    setcookie('status', 'true', time()+3600, '/');
 
-
-  //Login using file (.txt)
-
-    if ($username == "" || $password == "" || $usertype == "") {
-    header('location: login.php?err=null');
+    /* Check usertype */ 
+    if($usertype == 'admin') {
+      header('location: ../views/admin/adminHome.php?username='.$username);
+    } else if($usertype == 'customer') {
+      header('location: ../views/customerHome.php');
     } else {
-        $myUser = fopen('users.txt', "r");
-        while (!feof($myUser)) {
-            $data = fgets($myUser);
-            $user = explode(" | ", $data);
-            if ($user[0] == $username && $user[1] == $password && $user[2] == $usertype) {
-                setcookie('status', 'true', time() + 3000, '/');
-                if($usertype == 'admin') {
-                    header('location: adminHome.php');
-                } else if($usertype == 'employee') {
-                    header('location: empHome.php');
-                } else if($usertype == 'customer') {
-                    header('location: cusHome.php');
-            }
-        }
+      header('location: ../views/login.php');
     }
-    echo "<h2> 
-    Invalid User <br>
-    Please provide correct login information
-    </h2>";
+  } else {
+    echo "Invalid username or password! Make sure you have selected the correct user type.";
+  }
 
-    }
+  /*
+  // USERNAME VALIDATION
+  if($username == "" || $password == "" ){
+    $error[] =  "Validation failed: Username or Password is missing!";
+  }
+  else if(strlen($username)<2){
+    echo "<h2>Validation failed: Username must be at least 2 characters long! </h2>";
+  }
+  else if((substr_count($username,'@')>0) || (substr_count($username,'#')>0) || (substr_count($username,'$')>0) || (substr_count($username,'%')>0) || (substr_count($username,'/')>0) || (substr_count($username,'*')>0) || (substr_count($username,'+')>0) || (substr_count($username,'(')>0) || (substr_count($username,')')>0) || (substr_count($username,'!')>0) || (substr_count($username,'^')>0)){
+    echo "<h2> Validation failed: Username can contain alpha numeric characters, period, dash or underscore only! </h2>";
+  }
 
+  // PASSWORD VALIDATION
+  else if(strlen($password)<8){
+    echo "<h2> Validation failed: Password must be at least 8 characters long! </h2>";
+  }
+  else if((substr_count($password,'@')<1) && (substr_count($password,'#')<1) && (substr_count($password,'$')<1) && (substr_count($password,'%')<1)){
+    echo "<h2> Validation failed: Password must contain at least one special character (@, #, $, %) </h2>";
+  }
 
+  else if(($user = validateUser($username, $password)) == true){
+    //$status = validateUser($username, $password);
+    $user = ['username' => $username, 'password' => $password, 'usertype' => $usertype];
 
+    $_SESSION['username'] = $username;
+    $_SESSION['password'] = $password;
 
-    if($user['username'] == "") {
-        echo '<script>alert("Username is missing!")</script>';
-    } else if($user['password']  == "") {
-        echo '<script>alert("Password is missing!")</script>';
-    } else if($user['usertype']  == "") {
-        echo '<script>alert("Usertype is missing!")</script>';
+    setcookie("rememberUser", $_POST['username'], time() + (86400 * 100));
+    setcookie("rememberPass", $_POST['password'], time() + (86400 * 100));
+    header('location: ../views/admin/adminHome.php');
 
-    } else if($status != null){
-        if(strlen($user['username'])<2) {
-            echo '<script>alert("Username must be at least 2 characters long!")</script>';
-        } else if((substr_count($user['username'],'@')>0) || (substr_count($user['username'],'#')>0) || (substr_count($user['username'],'$')>0) || (substr_count($user['username'],'%')>0) || (substr_count($user['username'],'/')>0) || (substr_count($user['username'],'*')>0) || (substr_count($user['username'],'+')>0) || (substr_count($user['username'],'(')>0) || (substr_count($user['username'],')')>0) || (substr_count($user['username'],'!')>0) || (substr_count($user['username'],'^')>0)) {
-            echo '<script>alert("Username can contain alpha numeric characters, period, dash or underscore only!")</script>';
-        } else if(strlen($user['password'])<8) {
-            echo '<script>alert("Password must be at least 8 characters long!")</script>';
-        } else if((substr_count($user['password'],'@')<1) && (substr_count($user['password'],'#')<1) && (substr_count($user['password'],'$')<1) && (substr_count($user['password'],'%')<1)) {
-            echo '<script>alert("Password must contain at least one special character (@, #, $, %)!")</script>';
-        } else {
-            if($user['usertype'] == "admin"){
-                header('location: ../views/adminHome.php');
-            } else if($user['usertype'] == "customer"){
-                header('location: ../views/cusHome.php');
-            } else if($user['usertype'] == "employee"){
-                header('location: ../views/empHome.php');
-            }
+  }
+  */
 
-    }
-}
-
-
-    if ($username == "" || $password == "" || $usertype == "") {
-        //echo "<h2> Validation failed: Username or Password is missing! </h2>";
-        echo '<script>alert("Username or Password is missing!")</script>';
-        //header('location: ../views/login.php?err=null');
-
-    } else if(strlen($user['username'])<2){
-        //$_SESSION["message"] = "Validation failed: Username must be at least 2 characters long!";
-        //echo "<h2>Validation failed: Username must be at least 2 characters long! </h2>";
-        echo '<script>alert("Username must be at least 2 characters long!")</script>';
-        
-    } else if((substr_count($user['username'],'@')>0) || (substr_count($user['username'],'#')>0) || (substr_count($user['username'],'$')>0) || (substr_count($user['username'],'%')>0) || (substr_count($user['username'],'/')>0) || (substr_count($user['username'],'*')>0) || (substr_count($user['username'],'+')>0) || (substr_count($user['username'],'(')>0) || (substr_count($user['username'],')')>0) || (substr_count($user['username'],'!')>0) || (substr_count($user['username'],'^')>0)){
-        //$_SESSION["message"] = "Validation failed: Username can contain alpha numeric characters, period, dash or underscore only!";
-        //echo "<h2> Validation failed: Username can contain alpha numeric characters, period, dash or underscore only! </h2>";
-        echo '<script>alert("Username can contain alpha numeric characters, period, dash or underscore only!")</script>';
-
-    } else if(strlen($user['password'])<8){
-        //$_SESSION["message"] = "Validation failed: Password must be at least 8 characters long!";
-        //echo "<h2> Validation failed: Password must be at least 8 characters long! </h2>";
-        echo '<script>alert("Password must be at least 8 characters long!")</script>';
-
-    } else if((substr_count($user['password'],'@')<1) && (substr_count($user['password'],'#')<1) && (substr_count($user['password'],'$')<1) && (substr_count($user['password'],'%')<1)){
-        //$_SESSION["message"] = "Validation failed: Password must contain at least one special character (@, #, $, %) ";
-        //echo "<h2> Validation failed: Password must contain at least one special character (@, #, $, %) </h2>";
-        echo '<script>alert("Password must contain at least one special character (@, #, $, %)!")</script>';
-
-    } else if($user['usertype'] == "") {
-        //echo "<h2> Validation failed: Usertype is missing! Please select your usertype. </h2>";
-        echo '<script>alert("Usertype is missing! Please select your usertype.")</script>';
-    } else if($_SESSION['status'] = "true" && $user['usertype'] == 'admin'){
-        //$_SESSION['status'] = "true";
-        header('location: ../views/adminHome.php');
-
-    } else if($_SESSION['status'] = "true" && $user['usertype'] == 'customer') {
-        header('location: ../views/cusHome.php');
-
-    } else if($_SESSION['status'] = "true" && $user['usertype'] == 'employee') {
-        header('location: ../views/empHome.php');
-    }
-    */
-
-/*
-
-else if($status){
-        $_SESSION['status'] = "true";
-        header('location: ../views/cusHome.php');
-} else{
-        echo "invalid user";
-    }
-
-  
-*/
 
 ?>

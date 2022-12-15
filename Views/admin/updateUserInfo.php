@@ -1,14 +1,16 @@
 <?php
 
   session_start();
-  require_once '../models/userModel.php';
+  require_once '../../models/userModel.php';
 
   if(!isset($_SESSION['status'])){
     header('location: ../login.php');
   }
 
+  $id = $_GET['update'];
+
   $con = getConnection();
-  $sql = "SELECT * FROM user WHERE username='{$_SESSION['username']}'";
+  $sql = "SELECT * FROM user WHERE id='$id'";
   $result = mysqli_query($con, $sql);
   $row = mysqli_fetch_assoc($result);
 
@@ -26,7 +28,7 @@
     $result = mysqli_query($con, $sql);
 
     if($result) {
-      header('location: viewProfileAdmin.php');
+      header('location: viewUsers.php');
     } else {
       echo "Error";
     }
@@ -37,9 +39,8 @@
 <html>
 <head>
   
-  <title>Edit Profile | Customer</title>
-  <link rel="stylesheet" href="../assets/style/styleKhaled.css">
-  <script src="../assets/js/formValidate.js"></script>
+  <title>Update User | Admin</title>
+  <link rel="stylesheet" href="../../assets/style/styleKhaled.css">
 
   <style>
     :root {
@@ -159,43 +160,157 @@
       background: var(--clr-secondary);
       color: #fff;
     }
+
+    fieldset ul {
+      list-style-type: none;
+      padding: 20px;
+    }
+
+    fieldset ul li {
+      margin: 14px 0;
+      font-weight: bold;
+    }
+    #search {
+      width: 80%;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      margin: 10px;
+      background: var(--clr-bg);
+    }
+
+    #search:focus {
+      outline: none;
+    }
+
+    #search:hover {
+      border: 1px solid var(--clr-accent);
+    }
+
+    #click {
+      background: var(--clr-secondary);
+      color: #fff;
+      border-radius: 10px;
+      border: none;
+      padding: 6px;
+      width: 20%;
+    }
+
+    #click:hover {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+
+    #blur {
+      background: var(--clr-secondary);
+      color: #fff;
+      border-radius: 10px;
+      border: none;
+      padding: 6px;
+      width: 8%;
+      opacity: 40%;
+    }
+
+    #blur:hover {
+      opacity: 100%;
+      background: var(--clr-secondary);
+      color: #fff;
+    }
+
+    #searchResult {
+      margin-top: 40px;
+    }
+    .table {
+      border-collapse: collapse;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .table td, .table th {
+      
+      padding: 8px;
+    }
+
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: var(--clr-primary);
+      color: white;
+    }
+
+    .text-danger {
+      margin-top: 50px;
+      color: red;
+    }
+
+    #searchErr {
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .update-btn {
+      width: 100%;
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+      background: var(--clr-secondary);
+      color: #fff;
+    }
+
+    .update-btn:hover {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+
+    #showhidepwd{
+      font-size: 18px;
+      margin-left: 8px;
+    }
+
+    #showPass-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .err-text{
+      color: tomato;
+      font-size: 16px;
+    }
     </style>
 </head>
 <body>
 
 <div class="wrap">
-  <div class="header"><?php include_once '../assets/common/header.php'; ?></div> 
-  <div class="nav"><?php include_once '../assets/common/customerNavbar.php'; ?></div>
+  <div class="header">
+    <div class="logo-img">
+      <img src="..\..\assets\img\logo.png" alt="logo">
+    </div>
+    <div class="title">
+      <center><h3 class="title">Kothin<span style="color: rgb(255, 136, 0);">Train</span></h3></center>
+    </div>
+  </div>  
+  <div class="nav"><?php include_once '../../assets/common/adminNavbar.php'; ?></div>
 
   <div class="container">
-    <!-- Customer UI -->
-    <table
-      align="center"
-      width="100%"
-      height="100%"
-      style="border-collapse: collapse"
-    >
+    <!-- Admin UI -->
+    <table align="center" width="100%" height="100%" style="border-collapse: collapse">
       <tr>
-        <td class="left-section" style="padding-bottom: 100px">
-          <h4 class="heading">Edit Profile</h4>
-          <hr style="margin: 0 10px" />
-          <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="menuCustomer.php">Main Menu</a></li>
-            <li><a href="viewProfile.php">View Profile</a></li>
-            <li><a href="editProfile.php">Edit Profile</a></li>
-            <li><a href="#">Change Profile Picture</a></li>
-            <li><a href="#">View Album</a></li>
-          </ul>
-        </td>
         <td class="right-section" style="padding: 80px">
           <fieldset>
-            <legend> EDIT PROFILE </legend>
-            <form
-              action=""
-              method="post"
-              enctype="multipart/form-data" onkeyup="return validateProfileForm()" onsubmit="return validateProfileForm()"
-            >
-            <table class="table">
+            <legend>Update User Info</legend>
+              <form action="" method="post" onkeyup="return validateUpdateForm()" onsubmit="return validateUpdateForm()">
+                <table class="table">
                   <tr>
                     <td><label for="name">Name</label></td>
                     <td><input type="text" id="name" name="name" value=<?php echo $name ?>></td>
@@ -203,7 +318,6 @@
                   <tr>
                     <td colspan="2"><center><span id="nameErr" class="err-text"></span></center></td>
                   </tr>
-
                   <tr>
                     <td><label for="username">Username</label></td>
                     <td><input type="text" id="username" name="username" value=<?php echo $username ?>></td>
@@ -211,14 +325,13 @@
                   <tr>
                     <td colspan="2"><center><span id="unameErr" class="err-text"></span></center></td>
                   </tr>
-
-                  <label for="password">Password</label></td>
+                  <tr>
+                    <td><label for="password">Password</label></td>
                     <td><input type="password" id="password" name="password" value=<?php echo $password ?>></td>
                   </tr>
                   <tr>
                     <td colspan="2"><center><span id="passErr" class="err-text"></span></center></td>
                   </tr>
-                  
                   <tr>
                     <td colspan="2">
                       <div id="showPass-card">
@@ -230,7 +343,7 @@
                     <td colspan="2"><center><button type="submit" name="update" class="update-btn">Update</button></center></td>
                   </tr>
                 </table>
-            </form>
+              </form>
           </fieldset>
         </td>
       </tr>
@@ -242,6 +355,9 @@
   </div>
 
 </div>
+
+  <script src="../../assets/js/formValidate.js"></script>
+
 </body>
 </html>
 

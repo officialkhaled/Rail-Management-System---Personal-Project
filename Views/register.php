@@ -1,111 +1,45 @@
-<!-- Public UI -->
-
-<!-- PHP -->
-<?php 
-
-    if(isset($_POST['err'])){
-        if($_GET['err'] == 'invalid_request'){
-            echo "<h2> Invalid request error! </h2>";
-        }
-
-        if($_POST['err'] == 'null'){
-            echo "<h2> Missing Fields! </h2>";
-        }
-    }
-    
-    include_once "../assets/headerTest.php";
-    include_once "../assets/footerTest.php";
-?>
-
-<!-- HTML -->
 <html>
-  <head>
-    <title>Registration</title>
-    <link rel="stylesheet" href="../assets/style.css" />
-    <link rel="stylesheet" href="../assets/headStyle.css" />
-    <link rel="stylesheet" href="../assets/footerStyle.css" />
-  </head>
-  <body>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <style>
+    .err-text{
+      color: tomato;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+   
+<div class="form-container">
 
-    <table align="center"
-      width="100%"
-      style="margin: 20px">
-      <tr>
-        <td style="padding: 80px">
-          <form action="../controllers/regCheck.php"  method="post" enctype="multipart/form-data">
-            <fieldset>
-              <legend>REGISTRATION</legend>
-              <table>
-                <tr>
-                  <td>Name</td>
-                  <td>:</td>
-                  <td><input type="text" name="name" value="" /></td>
-                </tr>
+   <form action="../controllers/registerCheck.php" method="post" onsubmit="return validateRegistrationForm()" onkeyup="validateRegistrationForm()" enctype="multipart/form-data"> 
+      <h3>Register</h3>
 
-                <tr>
-                  <td>Email</td>
-                  <td>:</td>
-                  <td><input type="email" name="email" value="" /></td>
-                </tr>
-                <tr>
-                  <td>Username</td>
-                  <td>:</td>
-                  <td><input type="text" name="username" value="" /></td>
-                </tr>
-                <tr>
-                  <td>Password</td>
-                  <td>:</td>
-                  <td><input type="password" name="password" value="" /></td>
-                </tr>
-                <tr>
-                  <td>Confirm Password</td>
-                  <td>:</td>
-                  <td><input type="password" name="password" value="" /></td>
-                </tr>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <span id="nameErr" class="err-text"></span>
 
-                <!--
-                <tr>
-                  <td>Usertype</td>
-                  <td>:</td>
-                  <td>
-                    <input type="radio" name="usertype" value="admin"/> Admin
-                    <input type="radio" name="usertype" value="employee"/> Employee
-                    <input type="radio" name="usertype" value="customer"/> Customer
-                  </td>
-                </tr>
-                -->
-                
-              </table>
-              <hr />
-              <table>
-                <tr>
-                  <fieldset>
-                    <legend>Gender</legend>
-                    <input type="radio" name="gender" value="Male" /> Male <input
-                    type="radio" name="gender" value="Female" /> Female
-                    <input type="radio" name="gender" value="Other" /> Other
-                  </fieldset>
-                </tr>
-              </table>
-              <hr />
-              <input type="submit" name="btn" id="Submit" />
-              <input type="reset" name="rst" id="Reset" />
-            </fieldset>
-          </form>
-        </td>
-      </tr>
-      <!--
-      <tr align="center">
-        <td>
-          <nav>
-            <a href="t&c.php">Terms & Conditions</a> |
-            <a href="privacyPolicy.php">Privacy Policy</a> |
-            <a href="aboutUs.php">About Us</a>
-          </nav>
-          <footer style="margin: 10px">Copyright &copy; 2022</footer>
-        </td>
-      </tr>
-      -->
-    </table>
-  </body>
+      <input type="username" id="username" name="username" placeholder="Enter your username">
+      <span id="unameErr" class="err-text"></span>
+
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      <span id="passErr" class="err-text"></span>
+
+      <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password">
+      <span id="cpassErr" class="err-text"></span>
+
+      <select name="user_type" id="user_type">
+         <option value="customer">Customer</option>
+         <option value="admin">Admin</option>
+      </select>
+
+
+      <input type="submit" name="submit" value="register now" class="form-btn">
+      <p>Already have an account? <a id="link-color" href="login.php">Login</a></p>
+   </form>
+
+</div>
+
+<script src="../assets/js/formValidate.js"></script>
+</body>
 </html>

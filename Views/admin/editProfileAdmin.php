@@ -1,7 +1,7 @@
 <?php
 
   session_start();
-  require_once '../models/userModel.php';
+  require_once '../../models/userModel.php';
 
   if(!isset($_SESSION['status'])){
     header('location: ../login.php');
@@ -37,9 +37,9 @@
 <html>
 <head>
   
-  <title>Edit Profile | Customer</title>
-  <link rel="stylesheet" href="../assets/style/styleKhaled.css">
-  <script src="../assets/js/formValidate.js"></script>
+  <title>Edit Profile | Admin</title>
+  <link rel="stylesheet" href="../../assets/style/styleKhaled.css">
+  <script src="../../assets/js/formValidate.js"></script>
 
   <style>
     :root {
@@ -159,16 +159,71 @@
       background: var(--clr-secondary);
       color: #fff;
     }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .table th, .table td {
+      padding: 14px;
+      text-align: left;
+    }
+
+    .table tr:hover {
+      background-color: #f5f5f5;
+    } 
+
+    .update-btn {
+      width: 100%;
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+      background: var(--clr-secondary);
+      color: #fff;
+    }
+
+    .update-btn:hover {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+
+    #showhidepwd{
+      font-size: 18px;
+      margin-left: 8px;
+    }
+
+    #showPass-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .err-text{
+      color: tomato;
+      font-size: 16px;
+    }
     </style>
 </head>
 <body>
 
 <div class="wrap">
-  <div class="header"><?php include_once '../assets/common/header.php'; ?></div> 
-  <div class="nav"><?php include_once '../assets/common/customerNavbar.php'; ?></div>
+  <div class="header">
+    <div class="logo-img">
+      <img src="..\..\assets\img\logo.png" alt="logo">
+    </div>
+    <div class="title">
+      <center><h3 class="title">Kothin<span style="color: rgb(255, 136, 0);">Train</span></h3></center>
+    </div>
+  </div>  
+  <div class="nav"><?php include_once '../../assets/common/adminNavbar.php'; ?></div>
 
   <div class="container">
-    <!-- Customer UI -->
+    <!-- Admin UI -->
     <table
       align="center"
       width="100%"
@@ -180,11 +235,12 @@
           <h4 class="heading">Edit Profile</h4>
           <hr style="margin: 0 10px" />
           <ul style="margin-left: 20px; margin-top: 20px">
-            <li><a href="menuCustomer.php">Main Menu</a></li>
-            <li><a href="viewProfile.php">View Profile</a></li>
-            <li><a href="editProfile.php">Edit Profile</a></li>
+            <li><a href="menuAdmin.php">Main Menu</a></li>
+            <li><a href="viewProfileAdmin.php">View Profile</a></li>
+            <li><a href="editProfileAdmin.php">Edit Profile</a></li>
             <li><a href="#">Change Profile Picture</a></li>
-            <li><a href="#">View Album</a></li>
+            <li><a href="#">Edit Album</a></li>
+            <li><a href="viewUsers.php">User List</a></li>
           </ul>
         </td>
         <td class="right-section" style="padding: 80px">
@@ -193,7 +249,7 @@
             <form
               action=""
               method="post"
-              enctype="multipart/form-data" onkeyup="return validateProfileForm()" onsubmit="return validateProfileForm()"
+              enctype="multipart/form-data" onkeyup="return validateUpdateForm()" onsubmit="return validateUpdateForm()"
             >
             <table class="table">
                   <tr>
@@ -203,7 +259,6 @@
                   <tr>
                     <td colspan="2"><center><span id="nameErr" class="err-text"></span></center></td>
                   </tr>
-
                   <tr>
                     <td><label for="username">Username</label></td>
                     <td><input type="text" id="username" name="username" value=<?php echo $username ?>></td>
@@ -211,14 +266,13 @@
                   <tr>
                     <td colspan="2"><center><span id="unameErr" class="err-text"></span></center></td>
                   </tr>
-
-                  <label for="password">Password</label></td>
+                  <tr>
+                    <td><label for="password">Password</label></td>
                     <td><input type="password" id="password" name="password" value=<?php echo $password ?>></td>
                   </tr>
                   <tr>
                     <td colspan="2"><center><span id="passErr" class="err-text"></span></center></td>
                   </tr>
-                  
                   <tr>
                     <td colspan="2">
                       <div id="showPass-card">

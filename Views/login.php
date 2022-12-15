@@ -1,95 +1,56 @@
-<!-- PHP -->
-<?php
 
-  session_start();
-//  include_once "../assets/headerTest.php";
-// include_once "../assets/footerTest.php";
-
-?>
-
-<!-- HTML -->
 <html>
 <head>
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/style/style.css">
 
-    <title>Login</title>
-    <link rel="stylesheet" href="../assets/style.css" />
-    <link rel="stylesheet" href="../assets/styles.css" />
+  <style>
+    .err-text{
+      color: tomato;
+      font-size: 16px;
+    }
 
+    #showhidepwd{
+      font-size: 18px;
+      margin-right: 8px;
+    }
+
+    #usertype:hover {
+      background-color: var(--clr-accent);
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
+   
+  <div class="form-container">
 
-    <table
-      align="center"
-      width="100%"
-      style="margin: 20px;">
-        <tr>
-            <td style="padding: 80px">
-                <form action="../controllers/loginCheck.php" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend>LOGIN</legend>
-                        <table>
-                            <tr>
-                                <td>Username </td>
-                                <td>:</td>
-                                <td><input type="text" name="username" value=""></td>
-                            </tr>
-                            <tr>
-                                <td>Password </td>
-                                <td>:</td>
-                                <td><input type="password" name="password" value=""></td>
-                            </tr>
+    <form action="../controllers/loginCheck.php" method="post" id="login-form" onsubmit="return validateLoginForm()" onkeyup="validateRegistrationForm()" enctype="multipart/form-data" onclick="">
+      <h3>Login</h3>
 
-                        </table>
-                        <hr>
-                        <table>
-                            <tr><input type="checkbox" name="checkbox">Remember Me</tr>
-                            <tr><br><br></tr>
-                            <tr>
-                              <td><a href="forgotPass.php">Forgot Password?</a></td>
-                                <td>
-                                <td><input type="submit" name="btn" value="Submit"></td>
-                            </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </form>
-              </td>
-          </tr>
-
-    </table>
-
-    <script>
+      <input type="username" id="username" name="username" placeholder="Enter your username" class="text-field">
+      <span id="unameMsg" class="err-text"></span>
       
-      // JavaScript Form Validation
-      function validateForm() {
-        let x = document.forms["myForm"]["username"].value;
-        let y = document.forms["myForm"]["password"].value;
-        
-        if (x == "") {
-          let msg = document.getElementsByClassName("msgUser")[0].innerHTML =
-            "Please provide your username!";
-          return false;
-        } else if (y == "") {
-          let msg = document.getElementsByClassName("msgPass")[0].innerHTML =
-            "Please provide your password!";
-          return false;
-        } else if (x == "" && y == "") {
-          let alertUser = document.getElementsByClassName("msgUser")[0].innerHTML =
-            "Please provide your username!";
-          let alertPass = document.getElementsByClassName("msgPass")[0].innerHTML =
-            "Please provide your password!";
-          return false;
-        } else if (x == $user[$username] && y == $user[$password]) {
-          alert("Login successful!");
-          return true;
-        } else {
-          alert("Login failed!");
-          return false;
-        }
-      }
-      
-    </script>
+      <input type="password" id="password" name="password" placeholder="Enter your password" class="text-field">
+      <span id="passMsg" class="err-text"></span>
+
+      <div id="showPass-card">
+        <input type="checkbox" id="showPass" onchange="return SHPassword(this)" value="Show Password"><span id="showhidepwd">Show Password</span>
+      </div>
+
+      <select name="usertype" id="usertype">
+         <option value="customer">Customer</option>
+         <option value="admin">Admin</option>
+      </select>
+
+      <input type="submit" name="submit" value="LOGIN" class="form-btn">
+      <p>Don't have an account? <a id="link-color" href="register.php">Register now</a></p>
+    </form>
+
+  </div>
+
+  <script src="../assets/js/formValidate.js"></script>
 
 </body>
 </html>
