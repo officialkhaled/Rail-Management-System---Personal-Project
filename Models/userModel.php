@@ -40,7 +40,15 @@
 
     $result = mysqli_query($con, $sql);
 
-    if($result) {
+    $searchResult = array();
+
+    while($row = $result->fetch_assoc()) {
+      $searchResult[] = $row;
+    }
+
+    echo json_encode($searchResult);
+
+    /* if($result) {
       if(mysqli_num_rows($result) > 0) {
         echo "<tr>
                 <th>ID</th>
@@ -59,7 +67,7 @@
       } else {
         echo'<h2 class=text-danger>Data not found!</h2>';
       }
-    }
+    } */
   }
 
   function updateUser($id) {
