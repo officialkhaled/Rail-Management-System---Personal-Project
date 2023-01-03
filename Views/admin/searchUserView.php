@@ -256,22 +256,27 @@
         <td class="right-section" style="padding: 80px">
           <fieldset>
             <legend>Search</legend>
-              <form action="" method="post" onsubmit="return searchValidate()">
-                <input type="text" id="search" name="search" placeholder="Search by name">
-                <button id="click" name="submit">Search</button>
+              <form id="search-form" action="" method="post" onsubmit="return searchValidate()">
+                <input type="text" id="search-input (search)" name="search" placeholder="Search by name">
+                <button id="search-button (click)" name="submit">Search</button>
                 <span id="searchErr"></span>
+                
+                <!-- Container for search results -->
+                <div id="search-results"></div>
 
-                <table class="table">
+                <!-- <table class="table">
                   <?php
 
-                    if(isset($_POST['submit'])) {
+                    /* if(isset($_POST['submit'])) {
                       $search = $_POST['search'];
                       $searchResult = searchUser($search);
 
                       echo $searchResult;
-                    }
+                    } */
+
                   ?>
-                </table>
+                </table> -->
+
               </form>
           </fieldset>
         </td>
@@ -286,11 +291,36 @@
 </div>
 
 <script>
-  document.getElementById("search-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-  });
+  // Add event listener for search form submission
+  document.getElementById('search-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form from submitting
 
-  var query = document.getElementById();
+  // Get search input
+  var searchInput = document.getElementById('search-input').value;
+
+  // Create a new XHR object
+  var xhr = new XMLHttpRequest();
+
+  // Set up the request
+  xhr.open('POST', 'search.php');
+
+  // Set the request header
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+  // Set up the response handler
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      // If the request is successful, display the search results
+      document.getElementById('search-results').innerHTML = xhr.responseText;
+    } else {
+      // If the request is not successful, display an error message
+      document.getElementById('search-results').innerHTML = 'An error occurred while searching';
+    }
+  };
+
+  // Send the request
+  xhr.send('search=' + encodeURIComponent(searchInput));
+});
 
 
 </script>
